@@ -1,0 +1,17 @@
+{
+  "name": "mensthetic-website",
+  "version": "1.0.0",
+  "description": "Mensthetic website project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm start",
+    "build": "echo 'Build script not configured'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.55.0"
+  }
+}
