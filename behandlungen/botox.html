@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botox für Männer - Mensthetic</title>
+    <meta name="description" content="Professionelle Botox-Behandlungen für Männer. Faltenreduktion und natürliche Ergebnisse bei Mensthetic.">
+    <link rel="stylesheet" href="../css/menst-tokens.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/menst-animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MENSTHETIC</a>
+            <ul class="nav-menu">
+                
+                <li class="cart-nav-item">
+                    <button class="cart-button" onclick="toggleCart()" aria-label="Warenkorb">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16 5 16H17M17 13V16M9 19.5A1.5 1.5 0 1 1 6 19.5A1.5 1.5 0 0 1 9 19.5ZM20 19.5A1.5 1.5 0 1 1 17 19.5A1.5 1.5 0 0 1 20 19.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                </li>
+<li><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Leistungen</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <h4>Gesichtsbehandlungen</h4>
+                                <a href="hyaluron.html">Hyaluronsäure</a>
+                                <a href="botox.html">Botox</a>
+                                <a href="facelift.html">Facelift</a>
+                                <a href="augenlidstraffung.html">Augenlidstraffung</a>
+                                <a href="nasenkorrektur.html">Nasenkorrektur</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Körperbehandlungen</h4>
+                                <a href="lipolyse.html">Lipolyse</a>
+                                <a href="gynakomastie.html">Gynäkomastie</a>
+                                <a href="fettabsaugung.html">Fettabsaugung</a>
+                                <a href="bauchstraffung.html">Bauchstraffung</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Männermedizin</h4>
+                                <a href="hormon-analyse.html">Hormon-Analyse</a>
+                                <a href="testosteron.html">Testosteron-Therapie</a>
+                                <a href="haarausfall.html">Haarausfall-Behandlung</a>
+                                <a href="hyperhidrose.html">Hyperhidrose</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Übersicht</h4>
+                                <a href="../alle-leistungen.html" class="featured-link">Alle Leistungen & Preise</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Über uns</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <a href="../ueber-uns/philosophie.html">Unsere Philosophie</a>
+                                <a href="../ueber-uns/team.html">Das Team</a>
+                                <a href="../ueber-uns/praxis.html">Die Praxis</a>
+                                <a href="../ueber-uns/qualifikationen.html">Qualifikationen</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../index.html#sec.menst-before-after" class="nav-link">Resultate</a></li>
+                <li><a href="../index.html#sec.menst-shop" class="nav-link">Shop</a></li>
+                <li><a href="../index.html#sec.menst-cta-booking" class="nav-link">Kontakt</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Treatment Hero Section -->
+        <section class="hero" style="min-height: 60vh; background: linear-gradient(135deg, var(--menst-paper) 0%, var(--menst-cloud) 100%);">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Botox für Männer</h1>
+                        <p>Entspannung der Mimikmuskulatur für glatte, natürliche Ausstrahlung. Subtile Faltenreduktion, die Ihre maskulinen Züge betont.</p>
+                        <div class="hero-actions">
+                            <button id="cmp.menst-cta-primary" class="btn--menst-primary">
+                                Beratungstermin buchen
+                            </button>
+                            <button class="btn--menst-quiet">
+                                Preise ansehen
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-visual" style="background: linear-gradient(135deg, var(--menst-accent) 0%, var(--menst-accent-2) 100%); width: 300px; height: 300px;">
+                            <div style="color: white; font-size: 3rem; opacity: 0.8;">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 3L14 9L21 12L14 15L12 21L10 15L3 12L10 9L12 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatment Details -->
+        <section class="services" style="padding: var(--menst-s-12) 0;">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Was ist Botox?</h3>
+                        <p>Botox (Botulinumtoxin) ist ein bewährtes Medikament, das gezielt überaktive Muskelgruppen entspannt. Bei Männern setzen wir es ein, um Mimikfalten zu glätten, ohne die natürliche Ausstrahlung zu beeinträchtigen.</p>
+                        <p>Unsere Behandlung zielt auf subtile, maskuline Ergebnisse ab, die Ihre Persönlichkeit unterstreichen.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Behandlungsbereiche</h3>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Stirnfalten</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Zornesfalten (Glabella)</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Krähenfüße (Augenbereich)</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Bunny Lines (Nasenrücken)</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Kinn-Behandlung</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Ablauf der Behandlung</h3>
+                        <div style="display: flex; flex-direction: column; gap: var(--menst-s-3);">
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
+                                <span>Ausführliche Beratung und Mimikanalyse</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
+                                <span>Markierung der Injektionspunkte</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</div>
+                                <span>Präzise Botox-Injektion</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">4</div>
+                                <span>Nachbetreuung und Verhaltenshinweise</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="before-after">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Vorteile der Botox-Behandlung</h2>
+                    <p>Warum Männer sich für Botox entscheiden</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Schnelle Behandlung</h3>
+                        <p>Die Behandlung dauert nur 15-30 Minuten und ist nahezu schmerzfrei.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Natürliche Ergebnisse</h3>
+                        <p>Speziell auf die maskuline Mimik abgestimmte Dosierung für authentische Resultate.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Bewährte Sicherheit</h3>
+                        <p>Millionenfach erprobtes Verfahren mit höchsten Sicherheitsstandards.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Langanhaltende Wirkung</h3>
+                        <p>Ergebnisse sind 3-6 Monate sichtbar und können bei Bedarf aufgefrischt werden.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Präventive Wirkung</h3>
+                        <p>Verhindert die Entstehung tieferer Falten durch regelmäßige Anwendung.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Sofort gesellschaftsfähig</h3>
+                        <p>Keine Ausfallzeiten - Sie können direkt nach der Behandlung Ihren Alltag fortsetzen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Preise Botox</h2>
+                    <p>Transparente Kostenübersicht für Ihre Behandlung</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Stirnbehandlung</h3>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--menst-accent); margin: var(--menst-s-4) 0;">ab 200€</div>
+                        <p>Glättung der Stirnfalten</p>
+                        <ul style="color: var(--menst-steel); font-size: 0.9rem;">
+                            <li>20-30 Einheiten Botox</li>
+                            <li>Behandlungsdauer: 15 Min.</li>
+                            <li>Kostenlose Nachkontrolle</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Kombi-Behandlung</h3>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--menst-accent); margin: var(--menst-s-4) 0;">ab 350€</div>
+                        <p>Stirn + Zornesfalten + Krähenfüße</p>
+                        <ul style="color: var(--menst-steel); font-size: 0.9rem;">
+                            <li>40-60 Einheiten Botox</li>
+                            <li>Behandlungsdauer: 20-30 Min.</li>
+                            <li>Kostenlose Nachkontrolle</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Vollbehandlung</h3>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--menst-accent); margin: var(--menst-s-4) 0;">ab 500€</div>
+                        <p>Komplette Gesichtsbehandlung</p>
+                        <ul style="color: var(--menst-steel); font-size: 0.9rem;">
+                            <li>60-80 Einheiten Botox</li>
+                            <li>Behandlungsdauer: 30-45 Min.</li>
+                            <li>2 Nachkontrollen inklusive</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="before-after">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Häufige Fragen zu Botox</h2>
+                    <p>Antworten auf die wichtigsten Fragen</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Ist Botox schmerzhaft?</h3>
+                        <p>Die Behandlung ist nahezu schmerzfrei. Wir verwenden sehr feine Nadeln und können bei Bedarf eine betäubende Creme auftragen.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Wann sehe ich das Ergebnis?</h3>
+                        <p>Erste Effekte sind nach 3-5 Tagen sichtbar, das finale Ergebnis zeigt sich nach 1-2 Wochen.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Wie lange hält Botox?</h3>
+                        <p>Die Wirkung hält typischerweise 3-6 Monate an. Bei regelmäßiger Anwendung können die Intervalle länger werden.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Sieht man, dass ich Botox hatte?</h3>
+                        <p>Bei fachgerechter Anwendung nicht. Wir achten auf natürliche, subtile Ergebnisse, die Ihre Mimik erhalten.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Welche Nebenwirkungen gibt es?</h3>
+                        <p>Gelegentlich leichte Rötungen oder kleine Schwellungen an den Einstichstellen, die nach wenigen Stunden abklingen.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Ab welchem Alter ist Botox sinnvoll?</h3>
+                        <p>Präventiv ab etwa 25-30 Jahren, behandelnd bei ersten sichtbaren Mimikfalten ab 30-35 Jahren.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-booking">
+            <div class="container">
+                <h2>Bereit für glatte, natürliche Ergebnisse?</h2>
+                <p>Vereinbaren Sie Ihr kostenloses Beratungsgespräch für Botox-Behandlungen</p>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">E-Mail</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Telefon (optional)</label>
+                        <input type="tel" id="phone" name="phone" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Ihre Wünsche zur Botox-Behandlung</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Beschreiben Sie, welche Bereiche Sie behandeln lassen möchten..."></textarea>
+                    </div>
+                    <button type="submit" class="btn--menst-primary" style="background: var(--menst-accent-2);">
+                        Beratungstermin anfragen
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mensthetic</h3>
+                    <p>Ästhetische Medizin für den modernen Mann. Diskret, professionell, klinisch.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Musterstraße 123<br>12345 Berlin</p>
+                    <p>Tel: +49 30 12345678<br>info@mensthetic.de</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Öffnungszeiten</h3>
+                    <p>Mo-Fr: 9:00-18:00 Uhr<br>Sa: 10:00-14:00 Uhr<br>So: Geschlossen</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <a href="../index.html#impressum" class="footer-link">Impressum</a>
+                    <a href="../index.html#datenschutz" class="footer-link">Datenschutz</a>
+                    <a href="../index.html#agb" class="footer-link">AGB</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mensthetic. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/analytics.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menst-animations.js"></script>
+    <script src="../js/menst-view-transitions.js"></script>
+</body>
+</html>

@@ -1,12 +1,566 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensthetic</title>
+    <title>Mensthetic - Ästhetische Medizin für Männer</title>
+    <meta name="description" content="Professionelle ästhetische Medizin speziell für Männer. Hyaluronsäure, Lipolyse, Hormon-Analyse. Diskret, klinisch, modern.">
+    <link rel="stylesheet" href="css/menst-tokens.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menst-animations.css">
+    <link rel="stylesheet" href="css/password-gate.css">
 </head>
 <body>
-    <h1>Welcome to Mensthetic</h1>
-    <p>Your website is ready to be built!</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">MENSTHETIC</a>
+            <ul class="nav-menu">
+                <li class="cart-nav-item">
+                    <button class="cart-button" onclick="toggleCart()" aria-label="Warenkorb">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16 5 16H17M17 13V16M9 19.5A1.5 1.5 0 1 1 6 19.5A1.5 1.5 0 0 1 9 19.5ZM20 19.5A1.5 1.5 0 1 1 17 19.5A1.5 1.5 0 0 1 20 19.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                </li>
+                <li><a href="#" class="nav-link" onclick="scrollToTop()">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Leistungen</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <h4>Gesichtsbehandlungen</h4>
+                                <a href="behandlungen/hyaluron.html">Hyaluronsäure</a>
+                                <a href="behandlungen/botox.html">Botox</a>
+                                <a href="behandlungen/facelift.html">Facelift</a>
+                                <a href="behandlungen/augenlidstraffung.html">Augenlidstraffung</a>
+                                <a href="behandlungen/nasenkorrektur.html">Nasenkorrektur</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Körperbehandlungen</h4>
+                                <a href="behandlungen/lipolyse.html">Lipolyse</a>
+                                <a href="behandlungen/gynakomastie.html">Gynäkomastie</a>
+                                <a href="behandlungen/fettabsaugung.html">Fettabsaugung</a>
+                                <a href="behandlungen/bauchstraffung.html">Bauchstraffung</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Männermedizin</h4>
+                                <a href="behandlungen/hormon-analyse.html">Hormon-Analyse</a>
+                                <a href="behandlungen/testosteron.html">Testosteron-Therapie</a>
+                                <a href="behandlungen/haarausfall.html">Haarausfall-Behandlung</a>
+                                <a href="behandlungen/hyperhidrose.html">Hyperhidrose</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Übersicht</h4>
+                                <a href="alle-leistungen.html" class="featured-link">Alle Leistungen & Preise</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" class="nav-link" onclick="scrollToSection('sec.menst-before-after')">Resultate</a></li>
+                <li><a href="#" class="nav-link" onclick="scrollToSection('sec.menst-shop')">Shop</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Über uns</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <a href="ueber-uns/philosophie.html">Unsere Philosophie</a>
+                                <a href="ueber-uns/team.html">Das Team</a>
+                                <a href="ueber-uns/praxis.html">Die Praxis</a>
+                                <a href="ueber-uns/qualifikationen.html">Qualifikationen</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="sec.menst-hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Ästhetische Medizin für den modernen Mann</h1>
+                    <p>Diskrete, professionelle Behandlungen mit klinischer Exzellenz. Für Männer, die Wert auf natürliche Ergebnisse legen.</p>
+                    <div class="hero-actions">
+                        <button id="cmp.menst-cta-primary" class="btn--menst-primary">
+                            Beratungstermin buchen
+                        </button>
+                        <button class="btn--menst-quiet">
+                            Mehr erfahren
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ebook Band - Full width transparent background -->
+            <div class="ebook-band-overlay">
+                <div class="ebook-band">
+                    <div class="ebook-card">
+                        <h3>Wie ich Haarausfall besiegt habe</h3>
+                        <p>Meine persönliche Erfolgsgeschichte und bewährte Strategien gegen Haarausfall.</p>
+                        <div class="ebook-buttons">
+                            <button class="btn--menst-primary ebook-free" onclick="downloadFreeEbook()">
+                                Kostenlos downloaden
+                            </button>
+                            <button class="btn--menst-quiet ebook-premium" onclick="buyPremiumEbook()">
+                                Premium Version - 39€
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Packs Section -->
+        <section id="sec.menst-performance-packs" class="performance-packs">
+            <div class="container">
+                <div class="section-header">
+                    <h2>MENSTHETIC PERFORMANCE PACKS</h2>
+                    <p>Drei wissenschaftlich fundierte Bausteine für Ihr optimales Selbst. Jedes Pack beinhaltet eine professionelle Ästhetik-Analyse & Beratung</p>
+                </div>
+
+                <!-- Tab Navigation -->
+                <div class="pack-tabs">
+                    <button class="pack-tab active" data-tab="aesthetik">Ästhetik</button>
+                    <button class="pack-tab" data-tab="gesundheit">Gesundheit</button>
+                    <button class="pack-tab" data-tab="hautbooster">Hautbooster</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="pack-content">
+                    <!-- Ästhetik Tab -->
+                    <div class="pack-panel active" id="aesthetik">
+                        <div class="pack-grid">
+                            <div class="pack-item">
+                                <h3>Botox-Behandlung</h3>
+                                <p>Gezielte Glättung von Falten für ein sichtbar entspannteres, frischeres und natürliches Erscheinungsbild.</p>
+                            </div>
+                            <div class="pack-item">
+                                <h3>Mesotherapie für die Augen</h3>
+                                <p>Professionelle Behandlung gegen Müdigkeit und Augenringe. Revitalisiert die empfindliche Augenpartie für einen wachen, kraftvollen Blick.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gesundheit Tab -->
+                    <div class="pack-panel" id="gesundheit">
+                        <div class="pack-grid">
+                            <div class="pack-item">
+                                <h3>Hormon-Analyse</h3>
+                                <p>Umfassende Diagnostik Ihres Hormonhaushalts für optimale Gesundheit und Vitalität.</p>
+                            </div>
+                            <div class="pack-item">
+                                <h3>Testosteron-Optimierung</h3>
+                                <p>Wissenschaftlich fundierte Therapie zur Steigerung von Energie, Muskelaufbau und Wohlbefinden.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hautbooster Tab -->
+                    <div class="pack-panel" id="hautbooster">
+                        <div class="pack-grid">
+                            <div class="pack-item">
+                                <h3>Hyaluronsäure-Booster</h3>
+                                <p>Intensive Feuchtigkeitsversorgung und Hautstraffung für ein jugendlicheres Erscheinungsbild.</p>
+                            </div>
+                            <div class="pack-item">
+                                <h3>Vitamin-Infusion</h3>
+                                <p>Hochdosierte Vitaminzufuhr für strahlende Haut und gesteigerte Vitalität von innen heraus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Investment Info -->
+                <div class="pack-investment">
+                    <div class="investment-item">
+                        <div class="investment-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="investment-text">
+                            <h4>ZEIT</h4>
+                            <p>60 Minuten</p>
+                        </div>
+                    </div>
+                    <div class="investment-item">
+                        <div class="investment-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="12" y1="1" x2="12" y2="23" stroke="currentColor" stroke-width="2"/>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="investment-text">
+                            <h4>INVESTITION</h4>
+                            <p>499 €</p>
+                        </div>
+                    </div>
+                    <div class="investment-item">
+                        <div class="investment-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="investment-text">
+                            <h4>STANDORT</h4>
+                            <p>Berlin – Kurfürstendamm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="pack-cta">
+                    <button class="btn--menst-primary pack-book-btn">JETZT TERMIN BUCHEN</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview CTA -->
+        <section id="sec.menst-services" class="services-overview-cta">
+            <div class="container-narrow">
+                <div class="services-cta-content">
+                    <h2 style="color: var(--menst-ink);">Alle Leistungen & Preise</h2>
+                    <p style="color: var(--menst-ink);">Komplette Übersicht unserer ästhetischen Behandlungen mit transparenten Preisen. Professionelle Männermedizin auf höchstem Niveau.</p>
+                    <a href="alle-leistungen.html" class="btn--menst-primary">Alle Behandlungen ansehen</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before/After Section (Password Protected) -->
+        <section id="sec.menst-before-after" class="before-after password-protected">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Vorher / Nachher</h2>
+                    <p>Diskrete Ergebnisse, die überzeugen</p>
+                </div>
+
+                <!-- Password Gate Overlay -->
+                <div id="password-gate" class="password-gate">
+                    <div class="password-gate-content">
+                        <svg class="lock-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 11V7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7V11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="16" r="1" fill="currentColor"/>
+                        </svg>
+                        <h3>Passwortgeschützt</h3>
+                        <p>Bitte geben Sie das Passwort ein, um die Vorher/Nachher-Galerie zu sehen.</p>
+                        <form id="password-form" class="password-form">
+                            <input
+                                type="password"
+                                id="password-input"
+                                class="password-input"
+                                placeholder="Passwort eingeben"
+                                autocomplete="off"
+                                required>
+                            <button type="submit" class="btn--menst-primary">Entsperren</button>
+                        </form>
+                        <p id="password-error" class="password-error" style="display: none;">Falsches Passwort. Bitte versuchen Sie es erneut.</p>
+                    </div>
+                </div>
+
+                <!-- Protected Content -->
+                <div id="protected-content" class="protected-content" style="filter: blur(20px); pointer-events: none;">
+                    <div class="before-after-grid">
+                        <div class="before-after-item">
+                            <div class="real-before-after-image">
+                                <img src="images/vorher-nachher-stirn.png" alt="Stirnfalten Vorher-Nachher Behandlung" class="ba-image">
+                                <div class="image-overlay">
+                                    <div class="overlay-labels">
+                                        <span class="overlay-before">Vorher</span>
+                                        <span class="overlay-after">Nachher</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="before-after-content">
+                                <h4>Faltenbehandlung</h4>
+                                <p>Natürliche Glättung der Stirnfalten</p>
+                            </div>
+                        </div>
+                        <div class="before-after-item">
+                            <div class="real-before-after-image">
+                                <img src="images/vorher-nachher-2.png" alt="Nasenkorrektur Vorher-Nachher Behandlung" class="ba-image">
+                                <div class="image-overlay">
+                                    <div class="overlay-labels">
+                                        <span class="overlay-before">Vorher</span>
+                                        <span class="overlay-after">Nachher</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="before-after-content">
+                                <h4>Doppelkinn-Reduktion</h4>
+                                <p>Definierte Kinnlinie durch Lipolyse</p>
+                            </div>
+                        </div>
+                        <div class="before-after-item">
+                            <div class="real-before-after-image">
+                                <img src="images/vorher-nachher-3.png" alt="Augenbereich Vorher-Nachher Behandlung" class="ba-image">
+                                <div class="image-overlay">
+                                    <div class="overlay-labels">
+                                        <span class="overlay-before">Vorher</span>
+                                        <span class="overlay-after">Nachher</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="before-after-content">
+                                <h4>Gesichtskonturierung</h4>
+                                <p>Markante Wangenknochen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="sec.menst-shop" class="before-after">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Mensthetic Shop</h2>
+                    <p>Hochwertige Pflegeprodukte für den modernen Mann</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card shop-product">
+                        <div class="product-image">
+                            <div class="image-placeholder">Serum</div>
+                        </div>
+                        <h3>Anti-Aging Serum</h3>
+                        <p>Hochkonzentriertes Serum mit Hyaluronsäure und Peptiden für straffere Haut.</p>
+                        <div class="product-price">89€</div>
+                        <button class="btn--menst-primary product-btn" onclick="addToCart('anti-aging-serum', 'Anti-Aging Serum', 89)">In den Warenkorb</button>
+                    </div>
+                    <div class="service-card shop-product">
+                        <div class="product-image">
+                            <div class="image-placeholder">Set</div>
+                        </div>
+                        <h3>Premium Pflege-Set</h3>
+                        <p>Komplette Hautpflege-Routine: Reinigung, Serum, Creme und Sonnenschutz.</p>
+                        <div class="product-price">149€ <span class="original-price">189€</span></div>
+                        <button class="btn--menst-primary product-btn" onclick="addToCart('premium-set', 'Premium Pflege-Set', 149)">In den Warenkorb</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Method Section -->
+        <section id="sec.menst-method" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Unsere Methode</h2>
+                    <p>Klinische Exzellenz mit maskuliner Ästhetik</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🔬</div>
+                        <h3>Wissenschaftlich fundiert</h3>
+                        <p>Alle Behandlungen basieren auf neuesten medizinischen Erkenntnissen und bewährten Techniken.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h3>Individuell angepasst</h3>
+                        <p>Jede Behandlung wird speziell auf Ihre Bedürfnisse und Wünsche abgestimmt.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🤝</div>
+                        <h3>Diskret & vertrauensvoll</h3>
+                        <p>Höchste Diskretion und ein vertrauensvoller Umgang sind für uns selbstverständlich.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="sec.menst-faq" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Häufige Fragen</h2>
+                    <p>Antworten auf Ihre wichtigsten Fragen</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Sind die Behandlungen schmerzhaft?</h3>
+                        <p>Die meisten unserer Behandlungen sind nahezu schmerzfrei. Bei Bedarf verwenden wir lokale Betäubung.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Wie lange halten die Ergebnisse?</h3>
+                        <p>Je nach Behandlung zwischen 6-18 Monaten. Wir beraten Sie ausführlich über die Haltbarkeit.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Gibt es Ausfallzeiten?</h3>
+                        <p>Die meisten Behandlungen erfordern keine Ausfallzeiten. Sie sind sofort wieder gesellschaftsfähig.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="sec.menst-legal" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mensthetic</h3>
+                    <p>Ästhetische Medizin für den modernen Mann. Diskret, professionell, klinisch.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Musterstraße 123<br>12345 Berlin</p>
+                    <p>Tel: +49 30 12345678<br>info@mensthetic.de</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Öffnungszeiten</h3>
+                    <p>Mo-Fr: 9:00-18:00 Uhr<br>Sa: 10:00-14:00 Uhr<br>So: Geschlossen</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <a href="#impressum" class="footer-link">Impressum</a>
+                    <a href="#datenschutz" class="footer-link">Datenschutz</a>
+                    <a href="#agb" class="footer-link">AGB</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mensthetic. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Warenkorb</h3>
+            <button class="cart-close" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be populated here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Gesamt: <span id="cart-total">0€</span></strong>
+            </div>
+            <button class="btn--menst-primary cart-checkout" onclick="openCheckout()" style="width: 100%; margin-top: var(--menst-s-4);">
+                Zur Kasse
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="cart-overlay" onclick="toggleCart()"></div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="checkout-modal">
+        <div class="checkout-content">
+            <div class="checkout-header">
+                <h2>Bestellung abschließen</h2>
+                <button class="checkout-close" onclick="closeCheckout()">&times;</button>
+            </div>
+            <div class="checkout-body">
+                <div class="checkout-summary">
+                    <h3>Ihre Bestellung</h3>
+                    <div id="checkout-items"></div>
+                    <div class="checkout-total">
+                        <strong>Gesamtsumme: <span id="checkout-total">0€</span></strong>
+                    </div>
+                </div>
+                
+                <form id="checkout-form" class="checkout-form">
+                    <h3>Lieferadresse</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Vorname</label>
+                            <input type="text" name="firstName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Nachname</label>
+                            <input type="text" name="lastName" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">E-Mail</label>
+                        <input type="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Telefon</label>
+                        <input type="tel" name="phone" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Straße und Hausnummer</label>
+                        <input type="text" name="street" class="form-input" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">PLZ</label>
+                            <input type="text" name="zip" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Stadt</label>
+                            <input type="text" name="city" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Anmerkungen (optional)</label>
+                        <textarea name="notes" class="form-textarea" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="payment-info">
+                        <h3>Zahlung</h3>
+                        <p style="color: var(--menst-steel); font-size: 0.9rem;">
+                            Sie erhalten nach der Bestellung eine Rechnung per E-Mail mit den Zahlungsdetails.
+                        </p>
+                    </div>
+                    
+                    <button type="submit" class="btn--menst-primary" style="width: 100%; margin-top: var(--menst-s-6);">
+                        Bestellung abschicken
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Overlay -->
+    <div id="checkout-overlay" class="checkout-overlay" onclick="closeCheckout()"></div>
+
+    <!-- Floating Bottom Navigation -->
+    <div class="floating-bottom-nav">
+        <a href="https://instagram.com/mensthetic" target="_blank" class="floating-nav-item instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Instagram
+        </a>
+        <a href="https://wa.me/4930123456789" target="_blank" class="floating-nav-item whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" fill="currentColor"/>
+            </svg>
+            WhatsApp
+        </a>
+        <a href="#sec.menst-cta-booking" onclick="scrollToSection('sec.menst-cta-booking')" class="floating-nav-item booking">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Terminbuchung
+        </a>
+    </div>
+
+    <script type="module" src="js/analytics.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/carousel-fix.js"></script>
+    <script src="js/menst-animations.js"></script>
+    <script src="js/menst-view-transitions.js"></script>
+    <script src="js/password-gate.js"></script>
+    <script src="js/ebook.js"></script>
+    <script src="js/env-loader.js"></script>
+    <script src="js/supabase-client.js"></script>
 </body>
 </html>

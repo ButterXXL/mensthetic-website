@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testosteron-Therapie für Männer - Mensthetic</title>
+    <meta name="description" content="Professionelle Testosteron-Therapie für Männer. Medizinisch überwachte Hormonersatztherapie für mehr Energie, Kraft und Wohlbefinden bei Mensthetic.">
+    <link rel="stylesheet" href="../css/menst-tokens.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/menst-animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MENSTHETIC</a>
+            <ul class="nav-menu">
+                
+                <li class="cart-nav-item">
+                    <button class="cart-button" onclick="toggleCart()" aria-label="Warenkorb">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16 5 16H17M17 13V16M9 19.5A1.5 1.5 0 1 1 6 19.5A1.5 1.5 0 0 1 9 19.5ZM20 19.5A1.5 1.5 0 1 1 17 19.5A1.5 1.5 0 0 1 20 19.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                </li>
+<li><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Leistungen</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <h4>Gesichtsbehandlungen</h4>
+                                <a href="hyaluron.html">Hyaluronsäure</a>
+                                <a href="botox.html">Botox</a>
+                                <a href="facelift.html">Facelift</a>
+                                <a href="augenlidstraffung.html">Augenlidstraffung</a>
+                                <a href="nasenkorrektur.html">Nasenkorrektur</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Körperbehandlungen</h4>
+                                <a href="lipolyse.html">Lipolyse</a>
+                                <a href="gynakomastie.html">Gynäkomastie</a>
+                                <a href="fettabsaugung.html">Fettabsaugung</a>
+                                <a href="bauchstraffung.html">Bauchstraffung</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Männermedizin</h4>
+                                <a href="hormon-analyse.html">Hormon-Analyse</a>
+                                <a href="testosteron.html">Testosteron-Therapie</a>
+                                <a href="haarausfall.html">Haarausfall-Behandlung</a>
+                                <a href="hyperhidrose.html">Hyperhidrose</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Übersicht</h4>
+                                <a href="../alle-leistungen.html" class="featured-link">Alle Leistungen & Preise</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../index.html#sec.menst-before-after" class="nav-link">Resultate</a></li>
+                <li><a href="../index.html#sec.menst-shop" class="nav-link">Shop</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Über uns</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <a href="../ueber-uns/philosophie.html">Unsere Philosophie</a>
+                                <a href="../ueber-uns/team.html">Das Team</a>
+                                <a href="../ueber-uns/praxis.html">Die Praxis</a>
+                                <a href="../ueber-uns/qualifikationen.html">Qualifikationen</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../index.html#sec.menst-cta-booking" class="nav-link">Kontakt</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Treatment Hero Section -->
+        <section class="hero" style="min-height: 60vh; background: linear-gradient(135deg, var(--menst-paper) 0%, var(--menst-cloud) 100%);">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Testosteron-Therapie</h1>
+                        <p>Medizinisch überwachte Hormonersatztherapie für Männer. Zurück zu mehr Energie, Kraft und Lebensqualität.</p>
+                        <div class="hero-actions">
+                            <button id="cmp.menst-cta-primary" class="btn--menst-primary">
+                                Beratungstermin buchen
+                            </button>
+                            <button class="btn--menst-quiet">
+                                Preise ansehen
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-visual" style="background: linear-gradient(135deg, var(--menst-accent) 0%, var(--menst-accent-2) 100%); width: 300px; height: 300px;">
+                            <div style="color: white; font-size: 3rem; opacity: 0.8;">💪</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatment Details -->
+        <section class="services" style="padding: var(--menst-s-12) 0;">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Was ist Testosteron-Therapie?</h3>
+                        <p>Die Testosteron-Ersatztherapie (TRT) gleicht einen nachgewiesenen Testosteronmangel aus. Durch kontrollierte Hormonzufuhr werden Symptome des Testosteronmangels behandelt.</p>
+                        <p>Individuell angepasste Therapie unter strenger medizinischer Überwachung.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Anwendungsformen</h3>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Injektionen (Depot)</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Gel oder Creme</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Pflaster</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Implantate</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Kapseln</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Ablauf der Behandlung</h3>
+                        <div style="display: flex; flex-direction: column; gap: var(--menst-s-3);">
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
+                                <span>Umfassende Hormon-Analyse</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
+                                <span>Individuelle Therapieplanung</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</div>
+                                <span>Therapiestart mit Eingangsuntersuchung</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">4</div>
+                                <span>Regelmäßige Verlaufskontrollen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="before-after">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Vorteile der Testosteron-Therapie</h2>
+                    <p>Verbesserungen die Männer erleben</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>Mehr Energie</h3>
+                        <p>Deutliche Steigerung von Energie und Vitalität im Alltag.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💪</div>
+                        <h3>Muskelaufbau</h3>
+                        <p>Verbesserter Muskelaufbau und erhöhte Körperkraft.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🧠</div>
+                        <h3>Mentale Klarheit</h3>
+                        <p>Bessere Konzentration und geistige Leistungsfähigkeit.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">😊</div>
+                        <h3>Bessere Stimmung</h3>
+                        <p>Stabilere Stimmung und erhöhtes Wohlbefinden.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">❤️</div>
+                        <h3>Libido</h3>
+                        <p>Verbesserung der sexuellen Funktion und des Verlangens.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏃</div>
+                        <h3>Körperkomposition</h3>
+                        <p>Reduktion von Körperfett und bessere Körperdefinition.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Preise Testosteron-Therapie</h2>
+                    <p>Transparente Kostenübersicht für Ihre Behandlung</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Erstberatung & Diagnostik</h3>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--menst-accent); margin: var(--menst-s-4) 0;">249€</div>
+                        <p>Umfassende Erstuntersuchung</p>
+                        <ul style="color: var(--menst-steel); font-size: 0.9rem;">
+                            <li>Hormon-Analyse komplett</li>
+                            <li>Körperliche Untersuchung</li>
+                            <li>Therapieplan erstellen</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Monatliche Therapie</h3>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--menst-accent); margin: var(--menst-s-4) 0;">ab 189€</div>
+                        <p>Laufende Behandlungskosten</p>
+                        <ul style="color: var(--menst-steel); font-size: 0.9rem;">
+                            <li>Medikament & Anwendung</li>
+                            <li>Monatliche Kontrolle</li>
+                            <li>Dosisanpassung</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Verlaufskontrolle</h3>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--menst-accent); margin: var(--menst-s-4) 0;">89€</div>
+                        <p>Quartalsweise Überwachung</p>
+                        <ul style="color: var(--menst-steel); font-size: 0.9rem;">
+                            <li>Laborwerte kontrollieren</li>
+                            <li>Nebenwirkungen prüfen</li>
+                            <li>Therapie optimieren</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="before-after">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Häufige Fragen zur Testosteron-Therapie</h2>
+                    <p>Antworten auf die wichtigsten Fragen</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Wer ist für die Therapie geeignet?</h3>
+                        <p>Männer mit nachgewiesenem Testosteronmangel und entsprechenden Symptomen ab etwa 35 Jahren.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Wie schnell wirkt die Therapie?</h3>
+                        <p>Erste Verbesserungen nach 2-4 Wochen, volle Wirkung nach 3-6 Monaten.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Welche Nebenwirkungen gibt es?</h3>
+                        <p>Bei korrekter Dosierung minimal. Regelmäßige Kontrollen minimieren Risiken.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Ist die Therapie lebenslang?</h3>
+                        <p>Meist dauerhaft, da natürliche Produktion oft nicht wieder anspringt.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Übernimmt die Kasse die Kosten?</h3>
+                        <p>Bei medizinischer Indikation oft ja. Private Kassen meist vollständig.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Wie wird die Therapie überwacht?</h3>
+                        <p>Regelmäßige Blutkontrollen alle 3 Monate, Anpassung nach Bedarf.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-booking">
+            <div class="container">
+                <h2>Bereit für mehr Energie?</h2>
+                <p>Vereinbaren Sie Ihr Beratungsgespräch für eine Testosteron-Therapie</p>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">E-Mail</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Telefon (optional)</label>
+                        <input type="tel" id="phone" name="phone" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Ihre Symptome und Fragen</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Beschreiben Sie Ihre Beschwerden oder Fragen zur Testosteron-Therapie..."></textarea>
+                    </div>
+                    <button type="submit" class="btn--menst-primary" style="background: var(--menst-accent-2);">
+                        Beratungstermin anfragen
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mensthetic</h3>
+                    <p>Ästhetische Medizin für den modernen Mann. Diskret, professionell, klinisch.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Musterstraße 123<br>12345 Berlin</p>
+                    <p>Tel: +49 30 12345678<br>info@mensthetic.de</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Öffnungszeiten</h3>
+                    <p>Mo-Fr: 9:00-18:00 Uhr<br>Sa: 10:00-14:00 Uhr<br>So: Geschlossen</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <a href="../index.html#impressum" class="footer-link">Impressum</a>
+                    <a href="../index.html#datenschutz" class="footer-link">Datenschutz</a>
+                    <a href="../index.html#agb" class="footer-link">AGB</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mensthetic. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/analytics.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menst-animations.js"></script>
+    <script src="../js/menst-view-transitions.js"></script>
+</body>
+</html>

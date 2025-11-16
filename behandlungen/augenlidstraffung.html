@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Augenlidstraffung für Männer - Mensthetic</title>
+    <meta name="description" content="Professionelle Augenlidstraffung für Männer. Straffung von Ober- und Unterlidern für einen wachen, jugendlichen Blick bei Mensthetic.">
+    <link rel="stylesheet" href="../css/menst-tokens.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/menst-animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MENSTHETIC</a>
+            <ul class="nav-menu">
+                
+                <li class="cart-nav-item">
+                    <button class="cart-button" onclick="toggleCart()" aria-label="Warenkorb">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16 5 16H17M17 13V16M9 19.5A1.5 1.5 0 1 1 6 19.5A1.5 1.5 0 0 1 9 19.5ZM20 19.5A1.5 1.5 0 1 1 17 19.5A1.5 1.5 0 0 1 20 19.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                </li>
+<li><a href="../index.html" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Leistungen</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <h4>Gesichtsbehandlungen</h4>
+                                <a href="hyaluron.html">Hyaluronsäure</a>
+                                <a href="botox.html">Botox</a>
+                                <a href="facelift.html">Facelift</a>
+                                <a href="augenlidstraffung.html">Augenlidstraffung</a>
+                                <a href="nasenkorrektur.html">Nasenkorrektur</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Körperbehandlungen</h4>
+                                <a href="lipolyse.html">Lipolyse</a>
+                                <a href="gynakomastie.html">Gynäkomastie</a>
+                                <a href="fettabsaugung.html">Fettabsaugung</a>
+                                <a href="bauchstraffung.html">Bauchstraffung</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Männermedizin</h4>
+                                <a href="hormon-analyse.html">Hormon-Analyse</a>
+                                <a href="testosteron.html">Testosteron-Therapie</a>
+                                <a href="haarausfall.html">Haarausfall-Behandlung</a>
+                                <a href="hyperhidrose.html">Hyperhidrose</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Übersicht</h4>
+                                <a href="../alle-leistungen.html" class="featured-link">Alle Leistungen & Preise</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../index.html#sec.menst-before-after" class="nav-link">Resultate</a></li>
+                <li><a href="../index.html#sec.menst-shop" class="nav-link">Shop</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Über uns</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <a href="../ueber-uns/philosophie.html">Unsere Philosophie</a>
+                                <a href="../ueber-uns/team.html">Das Team</a>
+                                <a href="../ueber-uns/praxis.html">Die Praxis</a>
+                                <a href="../ueber-uns/qualifikationen.html">Qualifikationen</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../index.html#sec.menst-cta-booking" class="nav-link">Kontakt</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Treatment Hero Section -->
+        <section class="hero" style="min-height: 60vh; background: linear-gradient(135deg, var(--menst-paper) 0%, var(--menst-cloud) 100%);">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Augenlidstraffung für Männer</h1>
+                        <p>Wacher, frischer Blick durch professionelle Ober- und Unterlidstraffung. Für einen ausgeruhten und jugendlichen Ausdruck.</p>
+                        <div class="hero-actions">
+                            <button id="cmp.menst-cta-primary" class="btn--menst-primary">
+                                Beratungstermin buchen
+                            </button>
+                            <button class="btn--menst-quiet">
+                                Preise ansehen
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-visual" style="background: linear-gradient(135deg, var(--menst-accent) 0%, var(--menst-accent-2) 100%); width: 300px; height: 300px;">
+                            <div style="color: white; font-size: 3rem; opacity: 0.8;">👁</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatment Details -->
+        <section class="services" style="padding: var(--menst-s-12) 0;">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Was ist eine Augenlidstraffung?</h3>
+                        <p>Die Augenlidstraffung (Blepharoplastik) entfernt überschüssige Haut und Fettgewebe an Ober- und Unterlidern. Das Ergebnis: Ein wacher, jugendlicher Blick ohne müde Ausstrahlung.</p>
+                        <p>Bei Männern wird besonders auf die Erhaltung der natürlichen Augenform und maskulinen Züge geachtet.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <h3>Behandlungsbereiche</h3>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Oberlider (Schlupflider)</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Unterlider (Tränensäcke)</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Krähenfüße</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Augenringe</li>
+                            <li style="padding: var(--menst-s-2) 0; border-left: 3px solid var(--menst-accent); padding-left: var(--menst-s-3);">• Erschlaffte Haut</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <h3>Ablauf der Behandlung</h3>
+                        <div style="display: flex; flex-direction: column; gap: var(--menst-s-3);">
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
+                                <span>Detaillierte Augenanalyse und Beratung</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
+                                <span>Lokale Betäubung oder Dämmerschlaf</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</div>
+                                <span>Präzise Entfernung von Haut und Fett</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--menst-s-3);">
+                                <div style="width: 30px; height: 30px; background: var(--menst-accent); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">4</div>
+                                <span>Feine Naht in natürlichen Hautfalten</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="before-after">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Vorteile der Augenlidstraffung</h2>
+                    <p>Warum Männer sich für diese Behandlung entscheiden</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>Wacher Blick</h3>
+                        <p>Beseitigung müder Ausstrahlung für einen aufgeweckten, dynamischen Look.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h3>Präzise Ergebnisse</h3>
+                        <p>Minimal-invasive Technik für natürliche Ergebnisse ohne übertriebene Optik.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⏱️</div>
+                        <h3>Kurze Ausfallzeit</h3>
+                        <p>Schnelle Heilung, meist nach 1-2 Wochen wieder gesellschaftsfähig.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛡️</div>
+                        <h3>Langanhaltend</h3>
+                        <p>Ergebnisse halten 10-15 Jahre, dauerhafte Verjüngung der Augenpartie.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💼</div>
+                        <h3>Karrierevorteil</h3>
+                        <p>Professioneller Auftritt durch wache, aufmerksame Ausstrahlung.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔒</div>
+                        <h3>Diskret</h3>
+                        <p>Narben sind praktisch unsichtbar, da sie in natürlichen Falten versteckt sind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Preise Augenlidstraffung</h2>
+                    <p>Transparente Kostenübersicht für Ihre Behandlung</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Oberlidstraffung</h3>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--menst-accent); margin: var(--menst-s-4) 0;">ab 1.800€</div>
+                        <p>Entfernung von Schlupflidern</p>
+                        <ul style="color: var(--menst-steel); font-size: 0.9rem;">
+                            <li>Behandlungsdauer: 1-1,5 Std.</li>
+                            <li>Lokale Betäubung</li>
+                            <li>Nachkontrollen inklusive</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Unterlidstraffung</h3>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--menst-accent); margin: var(--menst-s-4) 0;">ab 2.200€</div>
+                        <p>Entfernung von Tränensäcken</p>
+                        <ul style="color: var(--menst-steel); font-size: 0.9rem;">
+                            <li>Behandlungsdauer: 1,5-2 Std.</li>
+                            <li>Lokale Betäubung</li>
+                            <li>Umfassende Nachsorge</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Komplette Augenlidstraffung</h3>
+                        <div style="font-size: 2rem; font-weight: bold; color: var(--menst-accent); margin: var(--menst-s-4) 0;">ab 3.500€</div>
+                        <p>Ober- und Unterlider komplett</p>
+                        <ul style="color: var(--menst-steel); font-size: 0.9rem;">
+                            <li>Behandlungsdauer: 2-3 Std.</li>
+                            <li>Dämmerschlaf möglich</li>
+                            <li>Premium-Nachsorge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="before-after">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Häufige Fragen zur Augenlidstraffung</h2>
+                    <p>Antworten auf die wichtigsten Fragen</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Wie lange dauert die Heilung?</h3>
+                        <p>Schwellungen und Blutergüsse verschwinden nach 1-2 Wochen. Das endgültige Ergebnis zeigt sich nach 2-3 Monaten.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Sind die Narben sichtbar?</h3>
+                        <p>Die Schnitte werden in natürlichen Lidfalten angelegt und sind praktisch unsichtbar.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Wann kann ich wieder arbeiten?</h3>
+                        <p>Bei Bürotätigkeit meist nach 5-7 Tagen. Sonnenbrille hilft in der ersten Zeit.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Ist der Eingriff schmerzhaft?</h3>
+                        <p>Der Eingriff erfolgt unter lokaler Betäubung. Nachschmerzen sind minimal und gut behandelbar.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Wie lange hält das Ergebnis?</h3>
+                        <p>Die Ergebnisse sind dauerhaft und halten 10-15 Jahre. Der natürliche Alterungsprozess geht weiter.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Welche Risiken gibt es?</h3>
+                        <p>Bei erfahrenen Chirurgen sind Komplikationen sehr selten. Aufklärung erfolgt ausführlich.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-booking">
+            <div class="container">
+                <h2>Bereit für einen wachen Blick?</h2>
+                <p>Vereinbaren Sie Ihr kostenloses Beratungsgespräch für Augenlidstraffung</p>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">E-Mail</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Telefon (optional)</label>
+                        <input type="tel" id="phone" name="phone" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Ihre Wünsche zur Augenlidstraffung</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Beschreiben Sie Ihre Vorstellungen für die Augenlidstraffung..."></textarea>
+                    </div>
+                    <button type="submit" class="btn--menst-primary" style="background: var(--menst-accent-2);">
+                        Beratungstermin anfragen
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mensthetic</h3>
+                    <p>Ästhetische Medizin für den modernen Mann. Diskret, professionell, klinisch.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Musterstraße 123<br>12345 Berlin</p>
+                    <p>Tel: +49 30 12345678<br>info@mensthetic.de</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Öffnungszeiten</h3>
+                    <p>Mo-Fr: 9:00-18:00 Uhr<br>Sa: 10:00-14:00 Uhr<br>So: Geschlossen</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <a href="../index.html#impressum" class="footer-link">Impressum</a>
+                    <a href="../index.html#datenschutz" class="footer-link">Datenschutz</a>
+                    <a href="../index.html#agb" class="footer-link">AGB</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mensthetic. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/analytics.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menst-animations.js"></script>
+    <script src="../js/menst-view-transitions.js"></script>
+</body>
+</html>

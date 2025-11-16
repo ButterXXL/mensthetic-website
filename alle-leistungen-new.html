@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alle Leistungen & Preise - Mensthetic</title>
+    <meta name="description" content="Komplette Übersicht aller ästhetischen Behandlungen und Preise bei Mensthetic. Professionelle Männermedizin mit transparenten Kosten.">
+    <link rel="stylesheet" href="css/menst-tokens.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menst-animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">MENSTHETIC</a>
+            <ul class="nav-menu">
+                <li class="cart-nav-item">
+                    <button class="cart-button" onclick="toggleCart()" aria-label="Warenkorb">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16 5 16H17M17 13V16M9 19.5A1.5 1.5 0 1 1 6 19.5A1.5 1.5 0 0 1 9 19.5ZM20 19.5A1.5 1.5 0 1 1 17 19.5A1.5 1.5 0 0 1 20 19.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                </li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Leistungen</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <h4>Gesichtsbehandlungen</h4>
+                                <a href="behandlungen/hyaluron.html">Hyaluronsäure</a>
+                                <a href="behandlungen/botox.html">Botox</a>
+                                <a href="behandlungen/facelift.html">Facelift</a>
+                                <a href="behandlungen/augenlidstraffung.html">Augenlidstraffung</a>
+                                <a href="behandlungen/nasenkorrektur.html">Nasenkorrektur</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Körperbehandlungen</h4>
+                                <a href="behandlungen/lipolyse.html">Lipolyse</a>
+                                <a href="behandlungen/gynakomastie.html">Gynäkomastie</a>
+                                <a href="behandlungen/fettabsaugung.html">Fettabsaugung</a>
+                                <a href="behandlungen/bauchstraffung.html">Bauchstraffung</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Männermedizin</h4>
+                                <a href="behandlungen/hormon-analyse.html">Hormon-Analyse</a>
+                                <a href="behandlungen/testosteron.html">Testosteron-Therapie</a>
+                                <a href="behandlungen/haarausfall.html">Haarausfall-Behandlung</a>
+                                <a href="behandlungen/hyperhidrose.html">Hyperhidrose</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Übersicht</h4>
+                                <a href="alle-leistungen.html" class="featured-link">Alle Leistungen & Preise</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html#sec.menst-before-after" class="nav-link">Resultate</a></li>
+                <li><a href="index.html#sec.menst-shop" class="nav-link">Shop</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Über uns</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <a href="ueber-uns/philosophie.html">Unsere Philosophie</a>
+                                <a href="ueber-uns/team.html">Das Team</a>
+                                <a href="ueber-uns/praxis.html">Die Praxis</a>
+                                <a href="ueber-uns/qualifikationen.html">Qualifikationen</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="index.html#sec.menst-cta-booking" class="nav-link">Kontakt</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 style="color: var(--menst-ink); margin-bottom: var(--menst-s-6);">Alle Leistungen & Preise</h1>
+                    <p style="color: var(--menst-steel); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Komplette Übersicht unserer ästhetischen Behandlungen mit transparenten Preisen. Professionelle Männermedizin auf höchstem Niveau.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Navigation -->
+        <section class="quick-nav" style="padding: var(--menst-s-8) 0; background: var(--menst-cloud);">
+            <div class="container">
+                <div style="display: flex; justify-content: center; gap: var(--menst-s-6); flex-wrap: wrap;">
+                    <a href="#gesicht" class="btn--menst-quiet" style="margin: 0;">Gesichtsbehandlungen</a>
+                    <a href="#koerper" class="btn--menst-quiet" style="margin: 0;">Körperbehandlungen</a>
+                    <a href="#gesundheit" class="btn--menst-quiet" style="margin: 0;">Männermedizin</a>
+                    <a href="#beratung" class="btn--menst-primary" style="margin: 0;">Beratung buchen</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview" style="padding: var(--menst-s-16) 0;">
+            <div class="container">
+                
+                <!-- Gesichtsbehandlungen -->
+                <div id="gesicht" class="service-category" style="margin-bottom: var(--menst-s-20);">
+                    <div class="section-header text-center" style="margin-bottom: var(--menst-s-12);">
+                        <h2 style="color: var(--menst-ink); font-size: 2.5rem;">Gesichtsbehandlungen</h2>
+                        <p style="color: var(--menst-steel); font-size: 1.1rem;">Natürliche Verjüngung und Gesichtsoptimierung</p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--menst-s-8);">
+                        
+                        <!-- Botox -->
+                        <div class="service-card" style="padding: var(--menst-s-8); border: 2px solid var(--menst-cloud); border-radius: var(--menst-r-lg); background: #fff;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--menst-s-6);">
+                                <h3 style="color: var(--menst-ink); margin: 0;">Botox-Behandlung</h3>
+                                <div style="background: var(--menst-accent); color: white; padding: var(--menst-s-2) var(--menst-s-4); border-radius: var(--menst-r-md); font-weight: 600;">ab 280€</div>
+                            </div>
+                            <div style="background: var(--menst-paper); padding: var(--menst-s-6); border-radius: var(--menst-r-md); margin-bottom: var(--menst-s-4);">
+                                <div style="display: grid; grid-template-columns: 1fr auto; gap: var(--menst-s-3); align-items: center;">
+                                    <span>Stirnfalten</span><span style="font-weight: 600;">320€</span>
+                                    <span>Zornesfalten</span><span style="font-weight: 600;">280€</span>
+                                    <span>Krähenfüße</span><span style="font-weight: 600;">280€</span>
+                                    <span style="color: var(--menst-accent); font-weight: 600;">Komplett-Paket</span><span style="color: var(--menst-accent); font-weight: 600;">680€</span>
+                                </div>
+                            </div>
+                            <p style="color: var(--menst-steel); margin: 0;">Faltenbehandlung mit Botulinumtoxin für ein natürlich entspanntes Aussehen ohne eingefrorenen Ausdruck.</p>
+                            <div style="margin-top: var(--menst-s-6);">
+                                <a href="behandlungen/botox.html" class="btn--menst-primary" style="width: 100%; text-align: center; display: block; text-decoration: none;">Mehr erfahren</a>
+                            </div>
+                        </div>
+
+                        <!-- Hyaluronsäure -->
+                        <div class="service-card" style="padding: var(--menst-s-8); border: 2px solid var(--menst-cloud); border-radius: var(--menst-r-lg); background: #fff;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--menst-s-6);">
+                                <h3 style="color: var(--menst-ink); margin: 0;">Hyaluronsäure</h3>
+                                <div style="background: var(--menst-accent); color: white; padding: var(--menst-s-2) var(--menst-s-4); border-radius: var(--menst-r-md); font-weight: 600;">ab 420€</div>
+                            </div>
+                            <div style="background: var(--menst-paper); padding: var(--menst-s-6); border-radius: var(--menst-r-md); margin-bottom: var(--menst-s-4);">
+                                <div style="display: grid; grid-template-columns: 1fr auto; gap: var(--menst-s-3); align-items: center;">
+                                    <span>Nasolabialfalten</span><span style="font-weight: 600;">450€</span>
+                                    <span>Wangen-Volumen</span><span style="font-weight: 600;">520€</span>
+                                    <span>Lippen-Kontur</span><span style="font-weight: 600;">420€</span>
+                                    <span>Tränenrinne</span><span style="font-weight: 600;">480€</span>
+                                </div>
+                            </div>
+                            <p style="color: var(--menst-steel); margin: 0;">Volumenaufbau und Faltenkorrektur mit hochwertiger Hyaluronsäure für natürliche Ergebnisse.</p>
+                            <div style="margin-top: var(--menst-s-6);">
+                                <a href="behandlungen/hyaluron.html" class="btn--menst-primary" style="width: 100%; text-align: center; display: block; text-decoration: none;">Mehr erfahren</a>
+                            </div>
+                        </div>
+
+                        <!-- Facelift -->
+                        <div class="service-card" style="padding: var(--menst-s-8); border: 2px solid var(--menst-cloud); border-radius: var(--menst-r-lg); background: #fff;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--menst-s-6);">
+                                <h3 style="color: var(--menst-ink); margin: 0;">Facelift</h3>
+                                <div style="background: var(--menst-accent); color: white; padding: var(--menst-s-2) var(--menst-s-4); border-radius: var(--menst-r-md); font-weight: 600;">ab 6.500€</div>
+                            </div>
+                            <div style="background: var(--menst-paper); padding: var(--menst-s-6); border-radius: var(--menst-r-md); margin-bottom: var(--menst-s-4);">
+                                <div style="display: grid; grid-template-columns: 1fr auto; gap: var(--menst-s-3); align-items: center;">
+                                    <span>Mini-Facelift</span><span style="font-weight: 600;">6.500€</span>
+                                    <span>Komplettes Facelift</span><span style="font-weight: 600;">12.500€</span>
+                                    <span>+ Halsstraffung</span><span style="font-weight: 600;">+2.800€</span>
+                                </div>
+                            </div>
+                            <p style="color: var(--menst-steel); margin: 0;">Chirurgische Gesichtsstraffung für langanhaltende Verjüngung und natürliche Ergebnisse.</p>
+                            <div style="margin-top: var(--menst-s-6);">
+                                <a href="behandlungen/facelift.html" class="btn--menst-primary" style="width: 100%; text-align: center; display: block; text-decoration: none;">Mehr erfahren</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Körperbehandlungen -->
+                <div id="koerper" class="service-category" style="margin-bottom: var(--menst-s-20);">
+                    <div class="section-header text-center" style="margin-bottom: var(--menst-s-12);">
+                        <h2 style="color: var(--menst-ink); font-size: 2.5rem;">Körperbehandlungen</h2>
+                        <p style="color: var(--menst-steel); font-size: 1.1rem;">Maskuline Körperformung und Silhouette-Optimierung</p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--menst-s-8);">
+                        
+                        <!-- Lipolyse -->
+                        <div class="service-card" style="padding: var(--menst-s-8); border: 2px solid var(--menst-cloud); border-radius: var(--menst-r-lg); background: #fff;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--menst-s-6);">
+                                <h3 style="color: var(--menst-ink); margin: 0;">Lipolyse (Fett-weg-Spritze)</h3>
+                                <div style="background: var(--menst-accent); color: white; padding: var(--menst-s-2) var(--menst-s-4); border-radius: var(--menst-r-md); font-weight: 600;">ab 380€</div>
+                            </div>
+                            <div style="background: var(--menst-paper); padding: var(--menst-s-6); border-radius: var(--menst-r-md); margin-bottom: var(--menst-s-4);">
+                                <div style="display: grid; grid-template-columns: 1fr auto; gap: var(--menst-s-3); align-items: center;">
+                                    <span>Doppelkinn</span><span style="font-weight: 600;">480€</span>
+                                    <span>Bauchbereich</span><span style="font-weight: 600;">380€</span>
+                                    <span>Flanken</span><span style="font-weight: 600;">520€</span>
+                                    <span style="color: var(--menst-accent); font-weight: 600;">3er-Paket</span><span style="color: var(--menst-accent); font-weight: 600;">1.280€</span>
+                                </div>
+                            </div>
+                            <p style="color: var(--menst-steel); margin: 0;">Nicht-operative Fettreduktion durch Injektionslipolyse. Ideal für kleinere Problemzonen.</p>
+                            <div style="margin-top: var(--menst-s-6);">
+                                <a href="behandlungen/lipolyse.html" class="btn--menst-primary" style="width: 100%; text-align: center; display: block; text-decoration: none;">Mehr erfahren</a>
+                            </div>
+                        </div>
+
+                        <!-- Gynäkomastie -->
+                        <div class="service-card" style="padding: var(--menst-s-8); border: 2px solid var(--menst-cloud); border-radius: var(--menst-r-lg); background: #fff;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--menst-s-6);">
+                                <h3 style="color: var(--menst-ink); margin: 0;">Gynäkomastie-OP</h3>
+                                <div style="background: var(--menst-accent); color: white; padding: var(--menst-s-2) var(--menst-s-4); border-radius: var(--menst-r-md); font-weight: 600;">ab 3.800€</div>
+                            </div>
+                            <div style="background: var(--menst-paper); padding: var(--menst-s-6); border-radius: var(--menst-r-md); margin-bottom: var(--menst-s-4);">
+                                <div style="display: grid; grid-template-columns: 1fr auto; gap: var(--menst-s-3); align-items: center;">
+                                    <span>Nur Fettabsaugung</span><span style="font-weight: 600;">3.800€</span>
+                                    <span>+ Drüsenentfernung</span><span style="font-weight: 600;">4.800€</span>
+                                    <span>Schwere Fälle</span><span style="font-weight: 600;">6.200€</span>
+                                </div>
+                            </div>
+                            <p style="color: var(--menst-steel); margin: 0;">Korrektur vergrößerter Männerbrust für eine maskuline, definierte Brustkontur.</p>
+                            <div style="margin-top: var(--menst-s-6);">
+                                <a href="behandlungen/gynakomastie.html" class="btn--menst-primary" style="width: 100%; text-align: center; display: block; text-decoration: none;">Mehr erfahren</a>
+                            </div>
+                        </div>
+
+                        <!-- Fettabsaugung -->
+                        <div class="service-card" style="padding: var(--menst-s-8); border: 2px solid var(--menst-cloud); border-radius: var(--menst-r-lg); background: #fff;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--menst-s-6);">
+                                <h3 style="color: var(--menst-ink); margin: 0;">Fettabsaugung</h3>
+                                <div style="background: var(--menst-accent); color: white; padding: var(--menst-s-2) var(--menst-s-4); border-radius: var(--menst-r-md); font-weight: 600;">ab 2.800€</div>
+                            </div>
+                            <div style="background: var(--menst-paper); padding: var(--menst-s-6); border-radius: var(--menst-r-md); margin-bottom: var(--menst-s-4);">
+                                <div style="display: grid; grid-template-columns: 1fr auto; gap: var(--menst-s-3); align-items: center;">
+                                    <span>1 Bereich</span><span style="font-weight: 600;">2.800€</span>
+                                    <span>2 Bereiche</span><span style="font-weight: 600;">4.200€</span>
+                                    <span>3+ Bereiche</span><span style="font-weight: 600;">ab 5.800€</span>
+                                    <span style="color: var(--menst-accent); font-weight: 600;">360° Liposuction</span><span style="color: var(--menst-accent); font-weight: 600;">8.500€</span>
+                                </div>
+                            </div>
+                            <p style="color: var(--menst-steel); margin: 0;">Präzise Körperformung durch moderne Liposuction-Technik für dauerhafte Ergebnisse.</p>
+                            <div style="margin-top: var(--menst-s-6);">
+                                <a href="behandlungen/fettabsaugung.html" class="btn--menst-primary" style="width: 100%; text-align: center; display: block; text-decoration: none;">Mehr erfahren</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Männermedizin -->
+                <div id="gesundheit" class="service-category" style="margin-bottom: var(--menst-s-20);">
+                    <div class="section-header text-center" style="margin-bottom: var(--menst-s-12);">
+                        <h2 style="color: var(--menst-ink); font-size: 2.5rem;">Männermedizin & Gesundheit</h2>
+                        <p style="color: var(--menst-steel); font-size: 1.1rem;">Hormonoptimierung und spezialisierte Männergesundheit</p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--menst-s-8);">
+                        
+                        <!-- Hormon-Analyse -->
+                        <div class="service-card" style="padding: var(--menst-s-8); border: 2px solid var(--menst-cloud); border-radius: var(--menst-r-lg); background: #fff;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--menst-s-6);">
+                                <h3 style="color: var(--menst-ink); margin: 0;">Hormon-Analyse</h3>
+                                <div style="background: var(--menst-accent); color: white; padding: var(--menst-s-2) var(--menst-s-4); border-radius: var(--menst-r-md); font-weight: 600;">ab 180€</div>
+                            </div>
+                            <div style="background: var(--menst-paper); padding: var(--menst-s-6); border-radius: var(--menst-r-md); margin-bottom: var(--menst-s-4);">
+                                <div style="display: grid; grid-template-columns: 1fr auto; gap: var(--menst-s-3); align-items: center;">
+                                    <span>Basis-Hormoncheck</span><span style="font-weight: 600;">180€</span>
+                                    <span>Erweiterte Analyse</span><span style="font-weight: 600;">320€</span>
+                                    <span>Komplett-Profil</span><span style="font-weight: 600;">480€</span>
+                                    <span>Nachkontrolle</span><span style="font-weight: 600;">120€</span>
+                                </div>
+                            </div>
+                            <p style="color: var(--menst-steel); margin: 0;">Umfassende Hormondiagnostik zur Optimierung von Energie, Libido und Wohlbefinden.</p>
+                            <div style="margin-top: var(--menst-s-6);">
+                                <a href="behandlungen/hormon-analyse.html" class="btn--menst-primary" style="width: 100%; text-align: center; display: block; text-decoration: none;">Mehr erfahren</a>
+                            </div>
+                        </div>
+
+                        <!-- Testosteron-Therapie -->
+                        <div class="service-card" style="padding: var(--menst-s-8); border: 2px solid var(--menst-cloud); border-radius: var(--menst-r-lg); background: #fff;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--menst-s-6);">
+                                <h3 style="color: var(--menst-ink); margin: 0;">Testosteron-Therapie</h3>
+                                <div style="background: var(--menst-accent); color: white; padding: var(--menst-s-2) var(--menst-s-4); border-radius: var(--menst-r-md); font-weight: 600;">ab 280€/Monat</div>
+                            </div>
+                            <div style="background: var(--menst-paper); padding: var(--menst-s-6); border-radius: var(--menst-r-md); margin-bottom: var(--menst-s-4);">
+                                <div style="display: grid; grid-template-columns: 1fr auto; gap: var(--menst-s-3); align-items: center;">
+                                    <span>Erstberatung + Diagnostik</span><span style="font-weight: 600;">320€</span>
+                                    <span>Monatliche Therapie</span><span style="font-weight: 600;">280€</span>
+                                    <span>3-Monats-Paket</span><span style="font-weight: 600;">750€</span>
+                                    <span>Nachkontrollen</span><span style="font-weight: 600;">150€</span>
+                                </div>
+                            </div>
+                            <p style="color: var(--menst-steel); margin: 0;">Medizinisch überwachte Testosteronoptimierung für mehr Energie, Muskelaufbau und Vitalität.</p>
+                            <div style="margin-top: var(--menst-s-6);">
+                                <a href="behandlungen/testosteron.html" class="btn--menst-primary" style="width: 100%; text-align: center; display: block; text-decoration: none;">Mehr erfahren</a>
+                            </div>
+                        </div>
+
+                        <!-- Haarausfall -->
+                        <div class="service-card" style="padding: var(--menst-s-8); border: 2px solid var(--menst-cloud); border-radius: var(--menst-r-lg); background: #fff;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--menst-s-6);">
+                                <h3 style="color: var(--menst-ink); margin: 0;">Haarausfall-Behandlung</h3>
+                                <div style="background: var(--menst-accent); color: white; padding: var(--menst-s-2) var(--menst-s-4); border-radius: var(--menst-r-md); font-weight: 600;">ab 250€</div>
+                            </div>
+                            <div style="background: var(--menst-paper); padding: var(--menst-s-6); border-radius: var(--menst-r-md); margin-bottom: var(--menst-s-4);">
+                                <div style="display: grid; grid-template-columns: 1fr auto; gap: var(--menst-s-3); align-items: center;">
+                                    <span>Diagnostik + Beratung</span><span style="font-weight: 600;">180€</span>
+                                    <span>PRP-Behandlung</span><span style="font-weight: 600;">320€</span>
+                                    <span>Medikamentöse Therapie</span><span style="font-weight: 600;">ab 250€</span>
+                                    <span>Haartransplantation</span><span style="font-weight: 600;">ab 3.500€</span>
+                                </div>
+                            </div>
+                            <p style="color: var(--menst-steel); margin: 0;">Moderne Therapieansätze gegen Haarausfall für volles, kräftiges Haar.</p>
+                            <div style="margin-top: var(--menst-s-6);">
+                                <a href="behandlungen/haarausfall.html" class="btn--menst-primary" style="width: 100%; text-align: center; display: block; text-decoration: none;">Mehr erfahren</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="beratung" class="cta-booking" style="background: var(--menst-graphite); color: white; padding: var(--menst-s-16) 0;">
+            <div class="container text-center">
+                <h2 style="color: white; margin-bottom: var(--menst-s-6);">Bereit für Ihr persönliches Beratungsgespräch?</h2>
+                <p style="color: rgba(255,255,255,0.8); font-size: 1.1rem; margin-bottom: var(--menst-s-8); max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Vereinbaren Sie Ihren kostenlosen Beratungstermin und lassen Sie sich individuell zu den für Sie passenden Behandlungen beraten.
+                </p>
+                <div style="display: flex; justify-content: center; gap: var(--menst-s-4); flex-wrap: wrap;">
+                    <a href="index.html#sec.menst-cta-booking" class="btn--menst-primary" style="text-decoration: none; padding: var(--menst-s-4) var(--menst-s-8);">Kostenlose Beratung buchen</a>
+                    <a href="tel:+493012345678" class="btn--menst-quiet" style="text-decoration: none; color: white; border-color: white; padding: var(--menst-s-4) var(--menst-s-8);">Direkt anrufen</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mensthetic</h3>
+                    <p>Ästhetische Medizin für den modernen Mann. Diskret, professionell, klinisch.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Musterstraße 123<br>12345 Berlin</p>
+                    <p>Tel: +49 30 12345678<br>info@mensthetic.de</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Öffnungszeiten</h3>
+                    <p>Mo-Fr: 9:00-18:00 Uhr<br>Sa: 10:00-14:00 Uhr<br>So: Geschlossen</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <a href="#impressum" class="footer-link">Impressum</a>
+                    <a href="#datenschutz" class="footer-link">Datenschutz</a>
+                    <a href="#agb" class="footer-link">AGB</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mensthetic. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Warenkorb</h3>
+            <button class="cart-close" onclick="toggleCart()">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be populated here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Gesamt: <span id="cart-total">0€</span></strong>
+            </div>
+            <button class="btn--menst-primary cart-checkout" onclick="openCheckout()" style="width: 100%; margin-top: var(--menst-s-4);">
+                Zur Kasse
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div id="cart-overlay" class="cart-overlay" onclick="toggleCart()"></div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="checkout-modal">
+        <div class="checkout-content">
+            <div class="checkout-header">
+                <h2>Bestellung abschließen</h2>
+                <button class="checkout-close" onclick="closeCheckout()">&times;</button>
+            </div>
+            <div class="checkout-body">
+                <div class="checkout-summary">
+                    <h3>Ihre Bestellung</h3>
+                    <div id="checkout-items"></div>
+                    <div class="checkout-total">
+                        <strong>Gesamtsumme: <span id="checkout-total">0€</span></strong>
+                    </div>
+                </div>
+                
+                <form id="checkout-form" class="checkout-form">
+                    <h3>Lieferadresse</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Vorname</label>
+                            <input type="text" name="firstName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Nachname</label>
+                            <input type="text" name="lastName" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">E-Mail</label>
+                        <input type="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Telefon</label>
+                        <input type="tel" name="phone" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Straße und Hausnummer</label>
+                        <input type="text" name="street" class="form-input" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">PLZ</label>
+                            <input type="text" name="zip" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Stadt</label>
+                            <input type="text" name="city" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Anmerkungen (optional)</label>
+                        <textarea name="notes" class="form-textarea" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="payment-info">
+                        <h3>Zahlung</h3>
+                        <p style="color: var(--menst-steel); font-size: 0.9rem;">
+                            Sie erhalten nach der Bestellung eine Rechnung per E-Mail mit den Zahlungsdetails.
+                        </p>
+                    </div>
+                    
+                    <button type="submit" class="btn--menst-primary" style="width: 100%; margin-top: var(--menst-s-6);">
+                        Bestellung abschicken
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Overlay -->
+    <div id="checkout-overlay" class="checkout-overlay" onclick="closeCheckout()"></div>
+
+    <script type="module" src="js/analytics.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menst-animations.js"></script>
+    <script src="js/menst-view-transitions.js"></script>
+
+    <style>
+        .text-center { text-align: center; }
+        .service-card { transition: all var(--menst-motion); }
+        .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(11, 14, 17, 0.15); }
+        
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+        
+        /* Quick nav hover effects */
+        .quick-nav a:hover { transform: translateY(-2px); }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .service-card { margin-bottom: var(--menst-s-8); }
+            .quick-nav div { flex-direction: column; gap: var(--menst-s-4); }
+            .section-header h2 { font-size: 2rem !important; }
+        }
+    </style>
+
+</body>
+</html>

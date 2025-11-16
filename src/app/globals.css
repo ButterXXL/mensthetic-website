@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Mensthetic Brand Colors */
+    --menst-primary: 27 54 93; /* #1B365D */
+    --menst-gold: 212 165 116; /* #D4A574 */
+    --menst-ink: 44 62 80; /* #2C3E50 */
+    --menst-steel: 108 117 125; /* #6C757D */
+    --menst-cloud: 248 249 250; /* #F8F9FA */
+    --menst-paper: 255 255 255; /* #FFFFFF */
+
+    --background: 0 0% 100%;
+    --foreground: var(--menst-ink);
+
+    --card: 0 0% 100%;
+    --card-foreground: var(--menst-ink);
+
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--menst-ink);
+
+    --primary: var(--menst-primary);
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: var(--menst-cloud);
+    --secondary-foreground: var(--menst-ink);
+
+    --muted: var(--menst-cloud);
+    --muted-foreground: var(--menst-steel);
+
+    --accent: var(--menst-gold);
+    --accent-foreground: var(--menst-primary);
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: var(--menst-cloud);
+    --input: var(--menst-cloud);
+    --ring: var(--menst-primary);
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: var(--menst-ink);
+    --foreground: 0 0% 98%;
+
+    --card: var(--menst-ink);
+    --card-foreground: 0 0% 98%;
+
+    --popover: var(--menst-ink);
+    --popover-foreground: 0 0% 98%;
+
+    --primary: var(--menst-gold);
+    --primary-foreground: var(--menst-primary);
+
+    --secondary: var(--menst-primary);
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: var(--menst-primary);
+    --muted-foreground: var(--menst-steel);
+
+    --accent: var(--menst-gold);
+    --accent-foreground: var(--menst-primary);
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: var(--menst-primary);
+    --input: var(--menst-primary);
+    --ring: var(--menst-gold);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-source;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-inter font-bold text-menst-primary;
+  }
+}
