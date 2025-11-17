@@ -1583,13 +1583,19 @@ p {
 
 .nav-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding: var(--menst-s-3) 32px var(--menst-s-3) 0;
+  padding: var(--menst-s-3) 32px var(--menst-s-3) 32px;
   max-width: none;
   margin: 0;
   width: 100%;
   position: relative;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: var(--menst-s-4);
 }
 
 .logo {
@@ -1599,8 +1605,102 @@ p {
   color: var(--menst-accent);
   text-decoration: none;
   letter-spacing: 0.5px;
-  position: absolute;
-  left: 32px;
+}
+
+/* Language Dropdown */
+.language-dropdown {
+  position: relative;
+}
+
+.lang-current {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--menst-cloud);
+  border-radius: var(--menst-r-sm);
+  padding: var(--menst-s-2) var(--menst-s-3);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--menst-steel);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--menst-s-1);
+  transition: all var(--menst-motion);
+  backdrop-filter: blur(10px);
+  min-width: 80px;
+}
+
+.lang-current:hover {
+  background: rgba(255, 255, 255, 1);
+  border-color: var(--menst-accent);
+  color: var(--menst-accent);
+}
+
+.lang-current .dropdown-arrow {
+  font-size: 0.6em;
+  transition: transform var(--menst-motion);
+}
+
+.language-dropdown:hover .dropdown-arrow,
+.language-dropdown.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.lang-menu {
+  min-width: 140px;
+  top: 100%;
+  left: 0;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: var(--menst-s-2);
+  padding: var(--menst-s-3) var(--menst-s-4);
+  color: var(--menst-steel);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all var(--menst-motion);
+  border-radius: var(--menst-r-xs);
+  margin: 2px;
+}
+
+.lang-option:hover {
+  background: var(--menst-frost);
+  color: var(--menst-accent);
+}
+
+.lang-option.active {
+  background: var(--menst-accent);
+  color: white;
+}
+
+.lang-option.active:hover {
+  background: var(--menst-accent);
+  color: white;
+}
+
+/* Mobile responsiveness for language dropdown */
+@media (max-width: 768px) {
+  .language-dropdown {
+    left: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-dropdown {
+    left: 130px;
+  }
+  
+  .lang-current {
+    padding: var(--menst-s-1) var(--menst-s-2);
+    font-size: 0.75rem;
+    min-width: 60px;
+  }
+  
+  .lang-menu {
+    min-width: 110px;
+  }
 }
 
 .nav-menu {

@@ -627,3 +627,127 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Language Dropdown Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const langDropdown = document.querySelector('.language-dropdown');
+    const langCurrent = document.querySelector('.lang-current');
+    const langOptions = document.querySelectorAll('.lang-option');
+    const currentLangSpan = document.querySelector('.current-lang');
+    
+    // Initialize current language based on current path
+    const currentPath = window.location.pathname;
+    const currentLang = currentPath.startsWith('/en/') ? 'en' : 'de';
+    setActiveLanguage(currentLang);
+    
+    // Handle dropdown click
+    langCurrent.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        langDropdown.classList.toggle('active');
+        
+        // Close other dropdowns if any
+        document.querySelectorAll('.dropdown.active').forEach(dropdown => {
+            if (dropdown !== langDropdown) {
+                dropdown.classList.remove('active');
+            }
+        });
+    });
+    
+    // Handle language option clicks
+    langOptions.forEach(option => {
+        option.addEventListener('click', function(e) {
+            e.preventDefault();
+            const selectedLang = this.getAttribute('data-lang');
+            
+            // Update active state
+            setActiveLanguage(selectedLang);
+            
+            // Store language preference
+            localStorage.setItem('currentLanguage', selectedLang);
+            
+            // Switch language content
+            switchLanguage(selectedLang);
+            
+            // Close dropdown
+            langDropdown.classList.remove('active');
+            
+            // Track language switch
+            if (window.menstheticAnalytics) {
+                window.menstheticAnalytics.trackEvent('language_switched', {
+                    language: selectedLang
+                });
+            }
+        });
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!langDropdown.contains(e.target)) {
+            langDropdown.classList.remove('active');
+        }
+    });
+    
+    function setActiveLanguage(lang) {
+        langOptions.forEach(option => {
+            option.classList.remove('active');
+            if (option.getAttribute('data-lang') === lang) {
+                option.classList.add('active');
+                // Update current language display
+                currentLangSpan.textContent = lang.toUpperCase();
+            }
+        });
+    }
+    
+    function switchLanguage(lang) {
+        const currentPath = window.location.pathname;
+        const currentUrl = window.location.href;
+        
+        if (lang === 'en') {
+            // Switch to English
+            if (currentPath.startsWith('/en/')) {
+                // Already on English version, do nothing
+                return;
+            } else {
+                // Redirect to English version
+                if (currentPath === '/' || currentPath === '/index.html') {
+                    window.location.href = '/en/';
+                } else {
+                    // Map German paths to English paths
+                    let englishPath = currentPath
+                        .replace('/ueber-uns/', '/about-us/')
+                        .replace('/behandlungen/', '/treatments/')
+                        .replace('/team.html', '/team.html')
+                        .replace('/philosophie.html', '/philosophy.html');
+                    
+                    // If the path starts with root, add /en prefix
+                    if (!englishPath.startsWith('/en/')) {
+                        englishPath = '/en' + englishPath;
+                    }
+                    
+                    window.location.href = englishPath;
+                }
+            }
+        } else {
+            // Switch to German
+            if (!currentPath.startsWith('/en/')) {
+                // Already on German version, do nothing
+                return;
+            } else {
+                // Redirect to German version
+                let germanPath = currentPath.replace('/en', '');
+                if (germanPath === '' || germanPath === '/') {
+                    germanPath = '/';
+                } else {
+                    // Map English paths back to German paths
+                    germanPath = germanPath
+                        .replace('/about-us/', '/ueber-uns/')
+                        .replace('/treatments/', '/behandlungen/')
+                        .replace('/philosophy.html', '/philosophie.html');
+                }
+                
+                window.location.href = germanPath;
+            }
+        }
+    }
+});

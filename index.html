@@ -14,7 +14,23 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">MENSTHETIC</a>
+            <div class="nav-left">
+                <a href="#" class="logo">MENSTHETIC</a>
+                <!-- Language Dropdown -->
+                <div class="language-dropdown dropdown">
+                    <button class="lang-current dropdown-toggle" aria-label="Language">
+                        <span class="current-lang">DE</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-menu lang-menu">
+                        <div class="dropdown-content">
+                            <a href="#" class="lang-option active" data-lang="de">🇩🇪 Deutsch</a>
+                            <a href="en/index.html" class="lang-option" data-lang="en">🇬🇧 English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <ul class="nav-menu">
                 <li class="cart-nav-item">
                     <button class="cart-button" onclick="toggleCart()" aria-label="Warenkorb">

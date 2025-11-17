@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensthetic - Aesthetic Medicine for Men</title>
+    <meta name="description" content="Professional aesthetic medicine specifically for men. Hyaluronic acid, lipolysis, hormone analysis. Discreet, clinical, modern.">
+    <link rel="stylesheet" href="../css/menst-tokens.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/menst-animations.css">
+    <link rel="stylesheet" href="../css/password-gate.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="logo">MENSTHETIC</a>
+                <!-- Language Dropdown -->
+                <div class="language-dropdown dropdown">
+                    <button class="lang-current dropdown-toggle" aria-label="Language">
+                        <span class="current-lang">EN</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-menu lang-menu">
+                        <div class="dropdown-content">
+                            <a href="../index.html" class="lang-option" data-lang="de">🇩🇪 Deutsch</a>
+                            <a href="#" class="lang-option active" data-lang="en">🇬🇧 English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="cart-nav-item">
+                    <button class="cart-button" onclick="toggleCart()" aria-label="Shopping Cart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16 5 16H17M17 13V16M9 19.5A1.5 1.5 0 1 1 6 19.5A1.5 1.5 0 0 1 9 19.5ZM20 19.5A1.5 1.5 0 1 1 17 19.5A1.5 1.5 0 0 1 20 19.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                </li>
+                <li><a href="#" class="nav-link" onclick="scrollToTop()">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Treatments</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <h4>Regenerative Medicine</h4>
+                                <a href="treatments/prp-therapy.html">PRP Blood Therapy</a>
+                                <a href="treatments/nad-infusion.html">NAD+ Infusions</a>
+                                <a href="treatments/biostimulators.html">Biostimulators</a>
+                                <a href="treatments/microneedling.html">Medical Microneedling</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Masculine Aesthetics</h4>
+                                <a href="treatments/brotox.html">"Brotox" / "Maletox"</a>
+                                <a href="treatments/jawline-enhancement.html">Jawline & Chin Enhancement</a>
+                                <a href="treatments/meso-eyes.html">Meso-Eyes & Mesotherapy</a>
+                                <a href="treatments/hyaluron-fillers.html">Hyaluron Fillers</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Performance & Health</h4>
+                                <a href="treatments/sports-medicine.html">Sports Medicine & Performance</a>
+                                <a href="treatments/infusion-therapy.html">Infusion Therapy</a>
+                                <a href="treatments/fat-dissolving.html">Fat Dissolving</a>
+                                <a href="treatments/botox-sweating.html">Botox for Sweating</a>
+                            </div>
+                            <div class="dropdown-column">
+                                <h4>Overview</h4>
+                                <a href="all-treatments.html" class="featured-link">All Treatments & Prices</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" class="nav-link" onclick="scrollToSection('sec.menst-before-after')">Results</a></li>
+                <li><a href="#" class="nav-link" onclick="scrollToSection('sec.menst-shop')">Shop</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">About Us</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <a href="about-us/philosophy.html">Our Philosophy</a>
+                                <a href="about-us/team.html#freddys-qualifications">The Practitioner</a>
+                                <a href="about-us/practice.html">The Practice</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="sec.menst-hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Aesthetic Medicine for Men<br>
+                    <span class="hero-tagline">The New Masculinity</span></h1>
+                    <p>Strong, groomed, authentic. Comprehensive men's aesthetics with medical standards – for the modern man who values natural, powerful results. By men. For men.</p>
+                    <div class="hero-actions">
+                        <button id="cmp.menst-cta-primary" class="btn--menst-primary">
+                            Book Consultation
+                        </button>
+                        <button class="btn--menst-quiet">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Ebook Band - Full width transparent background -->
+            <div class="ebook-band-overlay">
+                <div class="ebook-band">
+                    <div class="ebook-card">
+                        <h3><span class="ebook-collapsed">HAIR LOSS???</span><span class="ebook-expanded">How I Beat My Hair Loss.<br>My personal success story and proven strategies against hair loss.</span></h3>
+                        <div class="ebook-buttons">
+                            <button class="btn--menst-primary ebook-free" onclick="downloadFreeEbook()">
+                                Free Download
+                            </button>
+                            <button class="btn--menst-quiet ebook-premium" onclick="buyPremiumEbook()">
+                                Premium Version - €39
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec.menst-performance-packs" class="performance-packs">
+            <div class="container">
+                <div class="section-header">
+                    <h2>SPECIALIZED TREATMENTS</h2>
+                    <p style="margin-bottom: 0;">Three pillars of modern men's aesthetics: Regeneration, Aesthetics and Performance.</p>
+                    <p style="margin-top: 0;">Each treatment medically founded and adapted to male anatomy.</p>
+                </div>
+
+                <!-- Tab Navigation -->
+                <div class="pack-tabs">
+                    <button class="pack-tab active" data-tab="regenerative">Regenerative Medicine</button>
+                    <button class="pack-tab" data-tab="aesthetic">Men's Aesthetics</button>
+                    <button class="pack-tab" data-tab="performance">Performance & Health</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="pack-content">
+                    <!-- Regenerative Medicine Tab -->
+                    <div class="pack-panel active" id="regenerative">
+                        <div class="pack-grid">
+                            <a href="treatments/prp-therapy.html" class="pack-item pack-item-prp">
+                                <h3>PRP Blood Therapy</h3>
+                                <p>Natural. Regenerative. Effective. Activates body's own growth factors for denser hair and more vital skin.</p>
+                            </a>
+                            <a href="treatments/nad-infusion.html" class="pack-item pack-item-nad">
+                                <h3>NAD+ Infusions</h3>
+                                <p>Cellular energy & performance from within. Noticeable energy, clear focus, sustainable regeneration.</p>
+                            </a>
+                            <a href="treatments/biostimulators.html" class="pack-item pack-item-biostim">
+                                <h3>Biostimulators</h3>
+                                <p>Regeneration instead of volume. Strengthens skin structure from within and promotes natural collagen formation.</p>
+                            </a>
+                            <a href="treatments/microneedling.html" class="pack-item pack-item-microneedling">
+                                <h3>Medical Microneedling</h3>
+                                <p>Fine stimulation, great effect. Activates fibroblasts for visibly more firmness.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Masculine Aesthetics Tab -->
+                    <div class="pack-panel" id="aesthetic">
+                        <div class="pack-grid">
+                            <a href="treatments/brotox.html" class="pack-item pack-item-brotox">
+                                <h3>"Brotox" / "Maletox"</h3>
+                                <p>Relaxed. Confident. Naturally masculine. Botox specifically for men – reduces wrinkles without losing expression.</p>
+                            </a>
+                            <a href="treatments/jawline-enhancement.html" class="pack-item pack-item-jawline">
+                                <h3>Jawline & Chin Enhancement</h3>
+                                <p>Striking lines. Strong impact. Precise modeling for more definition and character.</p>
+                            </a>
+                            <a href="treatments/meso-eyes.html" class="pack-item pack-item-meso">
+                                <h3>Meso-Eyes & Mesotherapy</h3>
+                                <p>Alert look. More vital skin. Reduces dark circles and signs of fatigue for fresh appearance.</p>
+                            </a>
+                            <a href="treatments/hyaluron-fillers.html" class="pack-item pack-item-hyaluron">
+                                <h3>Hyaluron Fillers</h3>
+                                <p>Precise, masculine, harmonious. Natural volume for masculine facial features.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Performance & Health Tab -->
+                    <div class="pack-panel" id="performance">
+                        <div class="pack-grid">
+                            <a href="treatments/sports-medicine.html" class="pack-item pack-item-sportmedizin">
+                                <h3>Sports Medicine & Performance</h3>
+                                <p>Performance through precision. Analysis of blood profile and hormone levels for optimized vitality.</p>
+                            </a>
+                            <a href="treatments/infusion-therapy.html" class="pack-item pack-item-infusion">
+                                <h3>Infusion Therapy</h3>
+                                <p>Vitality in flow. Nutrients directly into the cell – maximally bioavailable for immediate energy.</p>
+                            </a>
+                            <a href="treatments/fat-dissolving.html" class="pack-item pack-item-fettweg">
+                                <h3>Fat Dissolving</h3>
+                                <p>Targeted not global. Local injection lipolysis dissolves stubborn fat deposits precisely.</p>
+                            </a>
+                            <a href="treatments/botox-sweating.html" class="pack-item pack-item-botox-schwitzen">
+                                <h3>Botox for Sweating</h3>
+                                <p>Confident. Dry. Self-assured. End sweat stains and uncertain handshakes.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pack-cta">
+                    <a href="all-treatments.html" class="btn--menst-primary">View All Treatments</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Freddy Section -->
+        <section id="sec.menst-about-freddy" class="about-freddy">
+            <div class="container">
+                <div class="about-freddy-content">
+                    
+                    <div class="about-freddy-text">
+                        <div class="section-header">
+                            <h2>About Freddy</h2>
+                            <p>By men. For men.</p>
+                        </div>
+                        
+                        <div class="freddy-story-with-image">
+                            <div class="freddy-main-image" style="margin-top: 8px;">
+                                <img src="../images/freddy-portrait.jpg" alt="Freddy - Founder of Mensthetic" class="freddy-photo" style="object-fit: cover; object-position: center 60%;">
+                                <div class="image-overlay">
+                                    <span class="image-caption">Freddy - Founder & Practitioner</span>
+                                </div>
+                            </div>
+                            
+                            <p><strong>I'm Freddy, 35 years old</strong> – former member of various federal agencies at home and abroad, bodyguard, and security consultant.</p>
+                            
+                            <p>I've seen how men age because they perform day after day, carry responsibility and often push themselves to their limits. I was one of them too – physically strong, but marked over the years by stress, deployments and shift work.</p>
+                            
+                            <p>Today I'm a <strong>practitioner for aesthetic and functional medicine</strong> and founder of Mensthetic – a place where men are treated as equals.</p>
+                            
+                            <p><strong>In my early 30s I realized: Anti-aging has nothing to do with vanity – but with self-respect.</strong></p>
+                            
+                            <div style="text-align: center; margin-top: var(--menst-s-8);">
+                                <a href="about-us/team.html" class="btn--menst-primary">The Practitioner</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="sec.menst-philosophy" class="philosophy">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Philosophy</h2>
+                    <p class="philosophy-tagline">The New Masculinity</p>
+                </div>
+                
+                <div class="philosophy-content">
+                    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                        <h3>Masculinity redefined: strong, groomed, authentic.</h3>
+                        <div style="text-align: left; line-height: 1.8; font-size: 1.1rem; color: var(--menst-steel); margin: var(--menst-s-6) 0;">
+                            <p>The modern man carries responsibility – professionally, privately, mentally. He works hard, makes decisions, is under pressure – often 50 or 60 hours a week.</p>
+                            <p><strong>But whoever constantly functions must not forget to also take care of himself.</strong></p>
+                            <p>Stress, sleep deprivation and strain accelerate the aging process. The result: tired skin, declining energy, a face that no longer reflects what's inside you.</p>
+                            <p>At Mensthetic it's not about appearing different – but staying yourself. Just better. Fresher. More vital. More masculine.<br>
+                            So that people look at you and think: <em>"He looks strong. He radiates energy."</em></p>
+                        </div>
+                        
+                        <div style="margin-top: var(--menst-s-8);">
+                            <a href="about-us/philosophy.html" class="btn--menst-primary">Our Philosophy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before/After Section (Password Protected) -->
+        <section id="sec.menst-before-after" class="before-after password-protected">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Before / After</h2>
+                    <p>Discreet results that convince</p>
+                </div>
+                
+                <div class="password-gate" id="before-after-gate">
+                    <div class="password-prompt">
+                        <h3>Protected Area</h3>
+                        <p>This section contains sensitive before/after photos and is password protected to ensure patient privacy.</p>
+                        <div class="password-input-group">
+                            <input type="password" id="before-after-password" placeholder="Enter password" aria-label="Password">
+                            <button onclick="checkBeforeAfterPassword()" class="btn--menst-primary">Access</button>
+                        </div>
+                        <div class="password-info">
+                            <p><small>Password will be provided during consultation</small></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="before-after-content" id="before-after-content" style="display: none;">
+                    <div class="before-after-grid">
+                        <div class="before-after-item">
+                            <div class="before-after-images">
+                                <div class="image-placeholder">
+                                    <span class="placeholder-icon">📷</span>
+                                    <span class="placeholder-text">Before/After<br>Image Set 1</span>
+                                </div>
+                            </div>
+                            <div class="before-after-details">
+                                <h3>Hyaluron Treatment</h3>
+                                <p>Natural facial contouring, 32 years old</p>
+                            </div>
+                        </div>
+                        
+                        <div class="before-after-item">
+                            <div class="before-after-images">
+                                <div class="image-placeholder">
+                                    <span class="placeholder-icon">📷</span>
+                                    <span class="placeholder-text">Before/After<br>Image Set 2</span>
+                                </div>
+                            </div>
+                            <div class="before-after-details">
+                                <h3>Botox Treatment</h3>
+                                <p>Forehead wrinkle reduction, 28 years old</p>
+                            </div>
+                        </div>
+                        
+                        <div class="before-after-item">
+                            <div class="before-after-images">
+                                <div class="image-placeholder">
+                                    <span class="placeholder-icon">📷</span>
+                                    <span class="placeholder-text">Before/After<br>Image Set 3</span>
+                                </div>
+                            </div>
+                            <div class="before-after-details">
+                                <h3>Jaw Line Enhancement</h3>
+                                <p>Masculine facial contouring, 35 years old</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="before-after-note">
+                        <p><small><strong>Note:</strong> Results may vary individually. These images were taken with patient consent and are for demonstration purposes only.</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="sec.menst-shop" class="shop">
+            <div class="container">
+                <div class="section-header">
+                    <h2>MENSTHETIC SHOP</h2>
+                    <p>Premium products for modern men's care</p>
+                </div>
+                <div class="shop-grid">
+                    <div class="shop-item">
+                        <div class="shop-item-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-icon">🧴</span>
+                                <span class="placeholder-text">Advanced<br>Hair Serum</span>
+                            </div>
+                        </div>
+                        <div class="shop-item-details">
+                            <h3>Premium Hair Growth Serum</h3>
+                            <p>Advanced formula for hair density and scalp health</p>
+                            <div class="shop-item-price">€89</div>
+                            <button class="btn--menst-primary add-to-cart" data-product="hair-serum" data-price="89">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="shop-item">
+                        <div class="shop-item-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-icon">🧴</span>
+                                <span class="placeholder-text">Anti-Aging<br>Face Cream</span>
+                            </div>
+                        </div>
+                        <div class="shop-item-details">
+                            <h3>Men's Anti-Aging Complex</h3>
+                            <p>Targeted formula for masculine skin needs</p>
+                            <div class="shop-item-price">€65</div>
+                            <button class="btn--menst-primary add-to-cart" data-product="face-cream" data-price="65">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                    <div class="shop-item">
+                        <div class="shop-item-image">
+                            <div class="image-placeholder">
+                                <span class="placeholder-icon">💊</span>
+                                <span class="placeholder-text">Performance<br>Supplements</span>
+                            </div>
+                        </div>
+                        <div class="shop-item-details">
+                            <h3>Vitality Support Formula</h3>
+                            <p>Premium supplement blend for energy and wellness</p>
+                            <div class="shop-item-price">€45</div>
+                            <button class="btn--menst-primary add-to-cart" data-product="supplements" data-price="45">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="sec.menst-faq" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Answers specifically for men</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Do the treatments look natural?</h3>
+                        <p>Absolutely. Our focus is on natural, masculine results. You should look fresher and more vital – but still remain yourself.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Can people tell I had aesthetic treatment?</h3>
+                        <p>No. We work with precise dosing and male-specific techniques. The result: a naturally refreshed appearance.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>How discreet is the treatment?</h3>
+                        <p>Maximum discretion is guaranteed. Our practice offers a confidential environment – from consultation to aftercare.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>How long do the results last?</h3>
+                        <p>Depending on the treatment: Botox 3-6 months, hyaluronic acid 6-12 months, biostimulators up to 18 months.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Are there any side effects?</h3>
+                        <p>Minimal. Slight swelling or redness can occur but usually subsides within hours to days.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>How much do treatments cost?</h3>
+                        <p>Prices start from €200 for small corrections. We provide transparent cost breakdown during consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="sec.menst-cta-booking" class="cta-booking">
+            <div class="container">
+                <h2>Ready for a change?</h2>
+                <p>Book your discreet consultation now</p>
+                <button class="btn--menst-primary">Book Consultation Now</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mensthetic</h3>
+                    <p>Aesthetic medicine for the modern man. Discreet, professional, clinical.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Musterstraße 123<br>12345 Berlin</p>
+                    <p>Tel: +49 30 12345678<br>info@mensthetic.de</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <p>Mon-Fri: 9:00-18:00<br>Sat: 10:00-14:00<br>Sun: Closed</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="#impressum" class="footer-link">Imprint</a>
+                    <a href="#datenschutz" class="footer-link">Privacy</a>
+                    <a href="#agb" class="footer-link">Terms</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mensthetic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="cart-close" onclick="toggleCart()" aria-label="Close cart">×</button>
+        </div>
+        <div class="cart-content">
+            <div class="cart-empty" id="cart-empty">
+                <p>Your cart is empty</p>
+            </div>
+            <div class="cart-items" id="cart-items"></div>
+        </div>
+        <div class="cart-footer" id="cart-footer" style="display: none;">
+            <div class="cart-total">
+                <strong>Total: €<span id="cart-total">0</span></strong>
+            </div>
+            <button class="btn--menst-primary cart-checkout">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/menst-animations.js"></script>
+    <script src="../js/menst-view-transitions.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/password-gate.js"></script>
+    <script src="../js/analytics.js"></script>
+</body>
+</html>
