@@ -17475,3 +17475,149 @@
  HTTP  17.11.2025 2:13:17 ::1 Returned 304 in 1 ms
  HTTP  17.11.2025 2:13:17 ::1 Returned 304 in 1 ms
  HTTP  17.11.2025 2:13:17 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:00 ::1 GET /ueber-uns/qualifikationen
+ HTTP  17.11.2025 2:20:00 ::1 Returned 200 in 3 ms
+ HTTP  17.11.2025 2:20:00 ::1 GET /css/menst-tokens.css
+ HTTP  17.11.2025 2:20:00 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:20:00 ::1 GET /css/main.css
+ HTTP  17.11.2025 2:20:00 ::1 GET /css/menst-animations.css
+ HTTP  17.11.2025 2:20:00 ::1 Returned 304 in 2 ms
+ HTTP  17.11.2025 2:20:00 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:20:00 ::1 GET /js/main.js
+ HTTP  17.11.2025 2:20:00 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:00 ::1 GET /js/menst-animations.js
+ HTTP  17.11.2025 2:20:00 ::1 GET /js/menst-view-transitions.js
+ HTTP  17.11.2025 2:20:00 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:00 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:13 ::1 GET /ueber-uns/team
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:13 ::1 GET /css/menst-tokens.css
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:13 ::1 GET /css/main.css
+ HTTP  17.11.2025 2:20:13 ::1 GET /css/menst-animations.css
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 2 ms
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:13 ::1 GET /images/freddy-portrait.jpg
+ HTTP  17.11.2025 2:20:13 ::1 GET /js/main.js
+ HTTP  17.11.2025 2:20:13 ::1 GET /images/freddy-medical-converted.jpg
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:20:13 ::1 GET /images/freddy-professional-background.jpg
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:13 ::1 GET /images/freddy-teaching.png
+ HTTP  17.11.2025 2:20:13 ::1 GET /images/IMG_0151.jpg
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:20:13 ::1 GET /js/menst-view-transitions.js
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:20:13 ::1 GET /js/menst-animations.js
+ HTTP  17.11.2025 2:20:13 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:48 ::1 GET /ueber-uns/qualifikationen
+ HTTP  17.11.2025 2:21:48 ::1 Returned 404 in 2 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /css/menst-tokens.css
+ HTTP  17.11.2025 2:21:57 ::1 GET /css/main.css
+ HTTP  17.11.2025 2:21:57 ::1 GET /css/menst-animations.css
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 3 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 2 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 2 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /css/password-gate.css
+ HTTP  17.11.2025 2:21:57 ::1 GET /js/analytics.js
+ HTTP  17.11.2025 2:21:57 ::1 GET /js/shop.js
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /images/freddy-portrait.jpg
+ HTTP  17.11.2025 2:21:57 ::1 GET /images/vorher-nachher-stirn.png
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /images/vorher-nachher-2.png
+ HTTP  17.11.2025 2:21:57 ::1 GET /images/vorher-nachher-3.png
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /js/main.js
+ HTTP  17.11.2025 2:21:57 ::1 GET /js/supabase-client.js
+ HTTP  17.11.2025 2:21:57 ::1 GET /js/carousel-fix.js
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /js/menst-animations.js
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /js/menst-view-transitions.js
+ HTTP  17.11.2025 2:21:57 ::1 GET /js/password-gate.js
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /js/ebook.js
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /js/supabase-client.js
+ HTTP  17.11.2025 2:21:57 ::1 GET /js/env-loader.js
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /public/hero-bg.jpg
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /images/prp-bg.jpg
+ HTTP  17.11.2025 2:21:57 ::1 GET /images/haarausfall-bg.jpg
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 GET /images/nad-bg.png
+ HTTP  17.11.2025 2:21:57 ::1 GET /images/biostim-bg.jpg
+ HTTP  17.11.2025 2:21:57 ::1 GET /images/microneedling-bg.jpg
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:21:57 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:22:56 ::1 GET /ueber-uns/qualifikationen
+ HTTP  17.11.2025 2:22:56 ::1 Returned 404 in 3 ms
+ HTTP  17.11.2025 2:23:01 ::1 GET /
+ HTTP  17.11.2025 2:23:01 ::1 Returned 200 in 2 ms
+ HTTP  17.11.2025 2:23:01 ::1 GET /css/menst-tokens.css
+ HTTP  17.11.2025 2:23:01 ::1 GET /css/menst-animations.css
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 GET /css/password-gate.css
+ HTTP  17.11.2025 2:23:01 ::1 GET /js/shop.js
+ HTTP  17.11.2025 2:23:01 ::1 GET /css/main.css
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 GET /images/freddy-portrait.jpg
+ HTTP  17.11.2025 2:23:01 ::1 GET /js/analytics.js
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 GET /images/vorher-nachher-2.png
+ HTTP  17.11.2025 2:23:01 ::1 GET /images/vorher-nachher-3.png
+ HTTP  17.11.2025 2:23:01 ::1 GET /images/vorher-nachher-stirn.png
+ HTTP  17.11.2025 2:23:01 ::1 GET /js/main.js
+ HTTP  17.11.2025 2:23:01 ::1 GET /js/carousel-fix.js
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 3 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 3 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 3 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:23:01 ::1 GET /js/menst-animations.js
+ HTTP  17.11.2025 2:23:01 ::1 GET /js/menst-view-transitions.js
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 0 ms
+ HTTP  17.11.2025 2:23:01 ::1 GET /js/password-gate.js
+ HTTP  17.11.2025 2:23:01 ::1 GET /js/env-loader.js
+ HTTP  17.11.2025 2:23:01 ::1 GET /js/ebook.js
+ HTTP  17.11.2025 2:23:01 ::1 GET /js/supabase-client.js
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 2 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 2 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 GET /public/hero-bg.jpg
+ HTTP  17.11.2025 2:23:01 ::1 GET /images/haarausfall-bg.jpg
+ HTTP  17.11.2025 2:23:01 ::1 GET /images/microneedling-bg.jpg
+ HTTP  17.11.2025 2:23:01 ::1 GET /images/prp-bg.jpg
+ HTTP  17.11.2025 2:23:01 ::1 GET /images/biostim-bg.jpg
+ HTTP  17.11.2025 2:23:01 ::1 GET /images/nad-bg.png
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
+ HTTP  17.11.2025 2:23:01 ::1 GET /js/supabase-client.js
+ HTTP  17.11.2025 2:23:01 ::1 Returned 304 in 1 ms
