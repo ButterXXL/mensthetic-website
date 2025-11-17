@@ -27,6 +27,1500 @@ body {
   padding: 0 var(--menst-s-4);
 }
 
+/* Treatment Hero PRP */
+.treatment-hero-prp {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/prp-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.treatment-hero-prp .treatment-hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.treatment-hero-prp .treatment-category {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--menst-primary);
+  margin-bottom: var(--menst-s-12);
+  margin-top: 0;
+  font-weight: 600;
+  position: absolute;
+  top: var(--menst-s-6);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.treatment-hero-prp h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--menst-s-4);
+  line-height: 1.2;
+  white-space: nowrap !important;
+  text-align: center !important;
+}
+
+.treatment-hero-prp .treatment-tagline {
+  font-size: 1.3rem;
+  color: var(--menst-primary);
+  font-weight: 600;
+  margin-bottom: var(--menst-s-3);
+}
+
+.treatment-hero-prp .treatment-intro {
+  font-size: 1.1rem;
+  margin-bottom: var(--menst-s-12);
+  line-height: 1.6;
+  opacity: 0.95;
+  color: white;
+}
+
+.treatment-quick-facts {
+  display: flex;
+  justify-content: center;
+  gap: 80px !important;
+  margin-bottom: var(--menst-s-8);
+  margin-top: var(--menst-s-8) !important;
+  flex-wrap: wrap;
+}
+
+.quick-fact {
+  display: flex;
+  align-items: center;
+  background: rgba(100, 100, 100, 0.5) !important;
+  padding: var(--menst-s-3) var(--menst-s-4);
+  border-radius: var(--menst-r-md) !important;
+  backdrop-filter: blur(10px);
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.fact-content strong {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white !important;
+}
+
+.fact-content span {
+  font-size: 0.9rem;
+  color: white !important;
+  opacity: 0.9;
+}
+
+.treatment-cta {
+  display: flex;
+  justify-content: center;
+  gap: var(--menst-s-4);
+  flex-wrap: wrap;
+  margin-top: var(--menst-s-16) !important;
+}
+
+/* Treatment Hero Background Styles */
+.treatment-hero-brotox {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/360_F_1672051496_PkIQ5L8oaqgfqG1zGWjiprjqjFzMUjkI.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.treatment-hero-jawline {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/jawline-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center 30% !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.treatment-hero-meso {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/meso-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.treatment-hero-hyaluron {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hyaluron-bg.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.treatment-hero-botox-schwitzen {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/botox-schwitzen-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.treatment-hero-infusion {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/infusion-bg.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.treatment-hero-microneedling {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/microneedling-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.treatment-hero-nad {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/nad-bg.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.treatment-hero-biostim {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/biostim-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.treatment-hero-fettweg {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/fett-weg-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.treatment-hero-sportmedizin {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/sportmedizin-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+/* Apply common styles to all treatment hero backgrounds */
+.treatment-hero-brotox .treatment-hero-content,
+.treatment-hero-jawline .treatment-hero-content,
+.treatment-hero-meso .treatment-hero-content,
+.treatment-hero-hyaluron .treatment-hero-content,
+.treatment-hero-botox-schwitzen .treatment-hero-content,
+.treatment-hero-infusion .treatment-hero-content,
+.treatment-hero-microneedling .treatment-hero-content,
+.treatment-hero-nad .treatment-hero-content,
+.treatment-hero-biostim .treatment-hero-content,
+.treatment-hero-fettweg .treatment-hero-content,
+.treatment-hero-sportmedizin .treatment-hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.treatment-hero-brotox .treatment-category,
+.treatment-hero-jawline .treatment-category,
+.treatment-hero-meso .treatment-category,
+.treatment-hero-hyaluron .treatment-category,
+.treatment-hero-botox-schwitzen .treatment-category,
+.treatment-hero-infusion .treatment-category,
+.treatment-hero-microneedling .treatment-category,
+.treatment-hero-nad .treatment-category,
+.treatment-hero-biostim .treatment-category,
+.treatment-hero-fettweg .treatment-category,
+.treatment-hero-sportmedizin .treatment-category {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--menst-primary);
+  margin-bottom: var(--menst-s-12);
+  margin-top: 0;
+  font-weight: 600;
+  position: absolute;
+  top: var(--menst-s-6);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.treatment-hero-brotox h1,
+.treatment-hero-jawline h1,
+.treatment-hero-meso h1,
+.treatment-hero-hyaluron h1,
+.treatment-hero-botox-schwitzen h1,
+.treatment-hero-infusion h1,
+.treatment-hero-microneedling h1,
+.treatment-hero-nad h1,
+.treatment-hero-biostim h1,
+.treatment-hero-fettweg h1,
+.treatment-hero-sportmedizin h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--menst-s-4);
+  line-height: 1.2;
+  text-align: center !important;
+}
+
+.treatment-hero-brotox .treatment-tagline,
+.treatment-hero-jawline .treatment-tagline,
+.treatment-hero-meso .treatment-tagline,
+.treatment-hero-hyaluron .treatment-tagline,
+.treatment-hero-botox-schwitzen .treatment-tagline,
+.treatment-hero-infusion .treatment-tagline,
+.treatment-hero-microneedling .treatment-tagline,
+.treatment-hero-nad .treatment-tagline,
+.treatment-hero-biostim .treatment-tagline,
+.treatment-hero-fettweg .treatment-tagline,
+.treatment-hero-sportmedizin .treatment-tagline {
+  font-size: 1.3rem;
+  color: var(--menst-primary);
+  font-weight: 600;
+  margin-bottom: var(--menst-s-3);
+}
+
+.treatment-hero-brotox .treatment-intro,
+.treatment-hero-jawline .treatment-intro,
+.treatment-hero-meso .treatment-intro,
+.treatment-hero-hyaluron .treatment-intro,
+.treatment-hero-botox-schwitzen .treatment-intro,
+.treatment-hero-infusion .treatment-intro,
+.treatment-hero-microneedling .treatment-intro,
+.treatment-hero-nad .treatment-intro,
+.treatment-hero-biostim .treatment-intro,
+.treatment-hero-fettweg .treatment-intro,
+.treatment-hero-sportmedizin .treatment-intro {
+  font-size: 1.1rem;
+  margin-bottom: var(--menst-s-12);
+  line-height: 1.6;
+  opacity: 0.95;
+  color: white;
+}
+
+/* Treatment Details Section */
+.treatment-details {
+  padding: var(--menst-s-12) 0;
+  background: var(--menst-paper);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--menst-s-10);
+  margin-top: var(--menst-s-8);
+}
+
+.detail-section h2 {
+  color: var(--menst-ink);
+  margin-bottom: var(--menst-s-6);
+  font-size: 1.8rem;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--menst-s-0);
+  background: var(--menst-cloud);
+  padding: var(--menst-s-6);
+  border-radius: var(--menst-r-lg);
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  padding: 7.5px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item:last-child {
+  border-bottom: none;
+}
+
+.benefit-content h3 {
+  color: var(--menst-primary);
+  margin-bottom: var(--menst-s-1);
+  font-size: 1.1rem;
+}
+
+.benefit-content p {
+  color: var(--menst-graphite);
+  line-height: 1.6;
+}
+
+.treatment-specs {
+  background: var(--menst-cloud);
+  padding: var(--menst-s-6);
+  border-radius: var(--menst-r-lg);
+}
+
+.spec-item {
+  padding: var(--menst-s-3) 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  border-left: none;
+}
+
+.spec-item:last-child {
+  border-bottom: none;
+}
+
+.spec-item strong {
+  color: var(--menst-ink);
+  margin-right: var(--menst-s-2);
+  min-width: 100px;
+}
+
+/* Treatment Process Section */
+.treatment-process {
+  padding: var(--menst-s-12) 0;
+  min-height: 70vh;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--menst-s-10);
+}
+
+.treatment-process .section-header h2 {
+  color: white;
+  margin-bottom: var(--menst-s-3);
+  font-size: 2.2rem;
+}
+
+.treatment-process .section-header p {
+  color: white;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.section-header h2 {
+  color: black;
+  margin-bottom: var(--menst-s-3);
+  font-size: 2.2rem;
+}
+
+.section-header p {
+  color: black;
+  font-size: 1.1rem;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--menst-s-8);
+}
+
+.process-step {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: var(--menst-s-8);
+  border-radius: var(--menst-r-lg);
+  box-shadow: var(--menst-shadow-1);
+  backdrop-filter: blur(10px);
+}
+
+.step-number {
+  background: var(--menst-primary);
+  color: black !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto var(--menst-s-4);
+}
+
+.process-step h3 {
+  color: white;
+  margin-bottom: var(--menst-s-3);
+  font-size: 1.3rem;
+}
+
+.process-step p {
+  color: white;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Treatment Results Section */
+.treatment-results {
+  padding: var(--menst-s-12) 0;
+  background: var(--menst-paper);
+}
+
+.results-placeholder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--menst-s-8);
+  margin-top: var(--menst-s-8);
+}
+
+.result-card {
+  background: white;
+  border-radius: var(--menst-r-lg);
+  overflow: hidden;
+  box-shadow: var(--menst-shadow-1);
+}
+
+.result-image-placeholder {
+  background: var(--menst-mist);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--menst-graphite);
+  font-style: italic;
+}
+
+.result-card h4 {
+  padding: var(--menst-s-4) var(--menst-s-4) var(--menst-s-2);
+  color: var(--menst-ink);
+  font-size: 1.1rem;
+}
+
+.result-card p {
+  padding: 0 var(--menst-s-4) var(--menst-s-4);
+  color: var(--menst-graphite);
+}
+
+/* Treatment FAQ Section */
+.treatment-faq {
+  padding: var(--menst-s-12) 0;
+  background: var(--menst-mist);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--menst-s-8);
+  margin-top: var(--menst-s-8);
+}
+
+.faq-item {
+  background: white;
+  padding: var(--menst-s-6);
+  border-radius: var(--menst-r-lg);
+  box-shadow: var(--menst-shadow-1);
+}
+
+.faq-item h3 {
+  color: black;
+  margin-bottom: var(--menst-s-3);
+  font-size: 1.1rem;
+}
+
+.faq-item p {
+  color: black;
+  line-height: 1.6;
+}
+
+/* Consultation CTA Section */
+.consultation-cta {
+  padding: var(--menst-s-12) 0;
+  background: linear-gradient(135deg, var(--menst-primary) 0%, var(--menst-ink) 100%);
+  color: white;
+  text-align: center;
+}
+
+.consultation-cta h2 {
+  margin-bottom: var(--menst-s-4);
+  font-size: 2.2rem;
+}
+
+.consultation-cta p {
+  font-size: 1.1rem;
+  margin-bottom: var(--menst-s-8);
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--menst-s-4);
+  flex-wrap: wrap;
+}
+
+/* Section Spacer */
+.section-spacer {
+  padding: var(--menst-s-8) 0;
+  min-height: 150px;
+}
+
+/* About Freddy Section */
+.about-freddy {
+  background: var(--menst-paper);
+  padding: var(--menst-s-12) 0;
+  border-top: 1px solid var(--menst-cloud);
+}
+
+.about-freddy-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.freddy-story-with-image {
+  margin-bottom: var(--menst-s-1);
+}
+
+.freddy-story-with-image .freddy-main-image {
+  float: left;
+  width: 260px;
+  margin: 0 var(--menst-s-6) var(--menst-s-4) 0;
+  border-radius: var(--menst-r-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.freddy-story-with-image:nth-of-type(2) .freddy-main-image {
+  float: left;
+  width: 216px;
+  margin: 0 var(--menst-s-6) var(--menst-s-4) 0;
+}
+
+.freddy-story-with-image .freddy-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.freddy-story-with-image:first-of-type .freddy-photo {
+  transform: scale(1.3);
+  transform-origin: center center;
+}
+
+.freddy-story-with-image:nth-of-type(2) .freddy-photo {
+  transform: scale(1.37) translateY(5px) !important;
+  transform-origin: center center !important;
+}
+
+img[src="images/IMG_0151.jpg"] {
+  transform: scale(1.37) translateY(5px) !important;
+  transform-origin: center center !important;
+}
+
+.freddy-story-with-image::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.freddy-main-image {
+  position: relative;
+  border-radius: var(--menst-r-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  margin-bottom: var(--menst-s-6);
+}
+
+.freddy-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--menst-r-lg);
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  padding: var(--menst-s-6) var(--menst-s-4) var(--menst-s-4);
+  color: white;
+}
+
+.image-caption {
+  font-weight: 600;
+  font-size: 1rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.freddy-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--menst-s-4);
+  margin-bottom: var(--menst-s-6);
+}
+
+.gallery-image {
+  aspect-ratio: 4/3;
+  border-radius: var(--menst-r-md);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-image:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--menst-frost) 0%, var(--menst-cloud) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--menst-s-3);
+  border: 2px dashed var(--menst-stone);
+  transition: all 0.2s ease;
+}
+
+.gallery-image:hover .image-placeholder {
+  background: linear-gradient(135deg, rgba(99, 155, 229, 0.1) 0%, var(--menst-frost) 100%);
+  border-color: var(--menst-accent);
+}
+
+.placeholder-icon {
+  font-size: 2rem;
+  opacity: 0.7;
+}
+
+.placeholder-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--menst-steel);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.freddy-credentials {
+  background: white;
+  border-radius: var(--menst-r-lg);
+  padding: var(--menst-s-6);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--menst-cloud);
+}
+
+.credential-item {
+  display: flex;
+  align-items: center;
+  gap: var(--menst-s-3);
+  padding: var(--menst-s-3) 0;
+  border-bottom: 1px solid var(--menst-cloud);
+}
+
+.credential-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.credential-icon {
+  font-size: 1.2rem;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.credential-item span:last-child {
+  font-size: 0.9rem;
+  color: var(--menst-steel);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.about-freddy-text {
+  text-align: left;
+}
+
+.freddy-story p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: var(--menst-s-5);
+  color: var(--menst-steel);
+}
+
+.freddy-story strong {
+  color: var(--menst-ink);
+  font-weight: 600;
+}
+
+.freddy-quote {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--menst-ink);
+  text-align: center;
+}
+
+.freddy-story {
+  margin: var(--menst-s-3) 0 var(--menst-s-6) 0;
+}
+
+.freddy-promise {
+  margin-top: var(--menst-s-8);
+}
+
+.freddy-promise p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Philosophy Section */
+.philosophy {
+  background: linear-gradient(135deg, rgba(247, 249, 251, 0.85) 0%, rgba(230, 235, 240, 0.85) 100%), url('../public/hero-bg.jpg');
+  background-size: 110%;
+  background-position: center;
+  background-attachment: fixed;
+  padding: var(--menst-s-12) 0;
+}
+
+.philosophy-tagline {
+  background: linear-gradient(135deg, var(--menst-ink) 0%, var(--menst-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.philosophy-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.philosophy-intro {
+  margin-bottom: var(--menst-s-10);
+}
+
+.philosophy-intro h3 {
+  font-size: 1.8rem;
+  color: var(--menst-ink);
+  margin-bottom: var(--menst-s-6);
+}
+
+.philosophy-intro p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: var(--menst-s-4);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.philosophy-quote {
+  background: linear-gradient(135deg, var(--menst-ink) 0%, var(--menst-accent) 100%);
+  color: white;
+  padding: var(--menst-s-8);
+  border-radius: var(--menst-r-lg);
+  margin: var(--menst-s-10) 0;
+  border: none;
+  quotes: none;
+}
+
+.philosophy-quote h4 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: var(--menst-s-4);
+  line-height: 1.4;
+}
+
+.philosophy-quote p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.philosophy-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--menst-s-8);
+  margin: var(--menst-s-10) 0;
+  text-align: left;
+}
+
+.pillar {
+  background: white;
+  padding: var(--menst-s-8);
+  border-radius: var(--menst-r-lg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--menst-cloud);
+}
+
+.pillar-icon {
+  font-size: 2rem;
+  margin-bottom: var(--menst-s-4);
+}
+
+.pillar h4 {
+  color: var(--menst-ink);
+  font-size: 1.2rem;
+  margin-bottom: var(--menst-s-4);
+  line-height: 1.3;
+}
+
+.pillar p {
+  color: var(--menst-steel);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.philosophy-cta {
+  text-align: center;
+  margin-top: var(--menst-s-10);
+  padding: var(--menst-s-8);
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: var(--menst-r-lg);
+  backdrop-filter: blur(10px);
+}
+
+.philosophy-cta h3 {
+  color: var(--menst-ink);
+  font-size: 1.5rem;
+  margin-bottom: var(--menst-s-4);
+}
+
+.philosophy-cta p {
+  font-size: 1.1rem;
+  margin-bottom: var(--menst-s-3);
+}
+
+/* Updated Performance Packs */
+.pack-item {
+  position: relative;
+}
+
+.pack-item.pack-item-prp {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-prp::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/prp-bg.jpg') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-prp h3,
+.pack-item.pack-item-prp p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
+}
+
+.pack-icon {
+  font-size: 2rem;
+  margin-bottom: var(--menst-s-4);
+  display: block;
+}
+
+/* Treatment Page Styles */
+.treatment-hero {
+  background: linear-gradient(135deg, var(--menst-paper) 0%, var(--menst-frost) 100%);
+  padding: calc(var(--menst-s-12) + 60px) 0 var(--menst-s-12) 0;
+  margin-top: 60px;
+}
+
+.treatment-hero-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.treatment-category {
+  background: linear-gradient(135deg, var(--menst-accent) 0%, var(--menst-primary) 100%);
+  color: white;
+  padding: var(--menst-s-2) var(--menst-s-4);
+  border-radius: var(--menst-r-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: var(--menst-s-4);
+}
+
+.treatment-tagline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--menst-accent);
+  margin-bottom: var(--menst-s-4);
+}
+
+.treatment-intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--menst-steel);
+  margin-bottom: var(--menst-s-8);
+}
+
+.treatment-quick-facts {
+  display: flex;
+  gap: var(--menst-s-6);
+  justify-content: center;
+  margin: var(--menst-s-8) 0;
+  flex-wrap: wrap;
+}
+
+.quick-fact {
+  display: flex;
+  align-items: center;
+  gap: var(--menst-s-3);
+  padding: var(--menst-s-4);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: var(--menst-r-md);
+  border: 1px solid var(--menst-cloud);
+}
+
+.fact-icon {
+  font-size: 1.5rem;
+}
+
+.fact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.fact-content strong {
+  font-size: 0.875rem;
+  color: var(--menst-ink);
+  font-weight: 600;
+}
+
+.fact-content span {
+  font-size: 0.875rem;
+  color: var(--menst-steel);
+}
+
+.treatment-cta {
+  display: flex;
+  gap: var(--menst-s-4);
+  justify-content: center;
+  margin-top: var(--menst-s-8);
+  flex-wrap: wrap;
+}
+
+.treatment-details {
+  padding: var(--menst-s-12) 0;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--menst-s-8);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.detail-section h2 {
+  color: var(--menst-ink);
+  margin-bottom: var(--menst-s-6);
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--menst-s-6);
+}
+
+.benefit-item {
+  display: flex;
+  gap: var(--menst-s-4);
+  align-items: flex-start;
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.benefit-content h3 {
+  font-size: 1.1rem;
+  color: var(--menst-ink);
+  margin-bottom: var(--menst-s-2);
+}
+
+.benefit-content p {
+  color: var(--menst-steel);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.treatment-specs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--menst-s-4);
+}
+
+.spec-item {
+  padding: var(--menst-s-4);
+  background: var(--menst-frost);
+  border-radius: var(--menst-r-md);
+}
+
+.treatment-process {
+  background: var(--menst-frost);
+  padding: var(--menst-s-12) 0;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--menst-s-8);
+  margin-top: var(--menst-s-8);
+}
+
+.process-step {
+  text-align: center;
+  padding: var(--menst-s-6);
+  background: white;
+  border-radius: var(--menst-r-lg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--menst-accent) 0%, var(--menst-primary) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto var(--menst-s-4) auto;
+}
+
+.process-step h3 {
+  color: var(--menst-ink);
+  margin-bottom: var(--menst-s-3);
+}
+
+.process-step p {
+  color: var(--menst-steel);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.treatment-results {
+  padding: var(--menst-s-12) 0;
+}
+
+.results-placeholder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--menst-s-8);
+  margin-top: var(--menst-s-8);
+}
+
+.result-card {
+  background: white;
+  border-radius: var(--menst-r-lg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.result-image-placeholder {
+  height: 200px;
+  background: var(--menst-frost);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--menst-steel);
+  font-weight: 500;
+}
+
+.result-card h4,
+.result-card p {
+  padding: 0 var(--menst-s-6);
+}
+
+.result-card h4 {
+  color: var(--menst-ink);
+  margin: var(--menst-s-4) 0;
+}
+
+.result-card p {
+  color: var(--menst-steel);
+  margin: 0 0 var(--menst-s-6) 0;
+}
+
+.treatment-faq {
+  background: var(--menst-frost);
+  padding: var(--menst-s-12) 0;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--menst-s-6);
+  margin-top: var(--menst-s-8);
+}
+
+.faq-item {
+  background: white;
+  padding: var(--menst-s-6);
+  border-radius: var(--menst-r-md);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+  color: var(--menst-ink);
+  font-size: 1.1rem;
+  margin-bottom: var(--menst-s-3);
+}
+
+.faq-item p {
+  color: var(--menst-steel);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.consultation-cta {
+  background: linear-gradient(135deg, var(--menst-ink) 0%, var(--menst-accent) 100%);
+  color: white;
+  padding: var(--menst-s-12) 0;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  color: white;
+  margin-bottom: var(--menst-s-4);
+}
+
+.cta-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: var(--menst-s-8);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--menst-s-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Treatment Areas */
+.treatment-areas {
+  padding: var(--menst-s-12) 0;
+  background: white;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--menst-s-6);
+  margin-top: var(--menst-s-8);
+}
+
+.area-card {
+  text-align: center;
+  padding: var(--menst-s-6);
+  background: var(--menst-frost);
+  border-radius: var(--menst-r-lg);
+  border: 1px solid var(--menst-cloud);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.area-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.area-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--menst-s-4);
+}
+
+.area-card h3 {
+  color: var(--menst-ink);
+  font-size: 1.2rem;
+  margin-bottom: var(--menst-s-3);
+}
+
+.area-card p {
+  color: var(--menst-steel);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Special Treatment Section */
+.special-treatment {
+  background: linear-gradient(135deg, var(--menst-frost) 0%, rgba(99, 155, 229, 0.05) 100%);
+  padding: var(--menst-s-12) 0;
+}
+
+.special-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--menst-s-8);
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.special-tagline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--menst-accent);
+  margin-bottom: var(--menst-s-4);
+}
+
+.special-benefits {
+  margin: var(--menst-s-6) 0;
+}
+
+.special-benefit {
+  display: flex;
+  align-items: center;
+  gap: var(--menst-s-3);
+  margin-bottom: var(--menst-s-3);
+}
+
+.benefit-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--menst-accent);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.special-specs {
+  background: rgba(255, 255, 255, 0.8);
+  padding: var(--menst-s-6);
+  border-radius: var(--menst-r-md);
+  border-left: 4px solid var(--menst-accent);
+  margin-top: var(--menst-s-6);
+}
+
+.special-specs ul {
+  list-style: none;
+  padding: 0;
+  margin: var(--menst-s-3) 0 0 0;
+}
+
+.special-specs li {
+  padding: var(--menst-s-2) 0;
+  color: var(--menst-steel);
+  border-bottom: 1px solid var(--menst-cloud);
+}
+
+.special-specs li:last-child {
+  border-bottom: none;
+}
+
+.special-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.special-card {
+  background: white;
+  padding: var(--menst-s-8);
+  border-radius: var(--menst-r-lg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+}
+
+.special-card h3 {
+  color: var(--menst-ink);
+  margin-bottom: var(--menst-s-4);
+  font-size: 1.1rem;
+}
+
+.special-card p {
+  color: var(--menst-steel);
+  line-height: 1.6;
+  margin-bottom: var(--menst-s-3);
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 967px) {
+  .special-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .special-visual {
+    margin-top: var(--menst-s-6);
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-freddy-content {
+    grid-template-columns: 1fr;
+    gap: var(--menst-s-8);
+  }
+  
+  .freddy-visual {
+    position: relative;
+    top: auto;
+    order: -1;
+  }
+  
+  .freddy-credentials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--menst-s-4);
+    padding: var(--menst-s-4);
+  }
+  
+  .credential-item {
+    flex-direction: column;
+    text-align: center;
+    border-bottom: none;
+    padding: var(--menst-s-4);
+    background: var(--menst-frost);
+    border-radius: var(--menst-r-md);
+  }
+  
+  .credential-icon {
+    font-size: 1.5rem;
+    margin-bottom: var(--menst-s-2);
+  }
+  
+  .freddy-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--menst-s-3);
+  }
+}
+
+@media (max-width: 767px) {
+  .treatment-quick-facts {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .treatment-cta,
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .areas-grid {
+    grid-template-columns: 1fr;
+    gap: var(--menst-s-4);
+  }
+  
+  .freddy-credentials {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-freddy-content {
+    gap: var(--menst-s-6);
+  }
+  
+  .freddy-story-with-image .freddy-main-image {
+    float: none;
+    width: 150px;
+    margin: 0 auto var(--menst-s-4) auto;
+    display: block;
+  }
+  
+  .freddy-story-with-image:nth-of-type(2) .freddy-main-image {
+    float: none;
+    width: 150px;
+    margin: 0 auto var(--menst-s-4) auto;
+    display: block;
+  }
+  
+  .freddy-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--menst-s-3);
+  }
+  
+  .placeholder-text {
+    font-size: 0.75rem;
+  }
+  
+  .placeholder-icon {
+    font-size: 1.5rem;
+  }
+}
+
 /* Typography - Research-Based System */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -41,6 +1535,17 @@ h1 {
   font-weight: 700;
   margin-bottom: var(--menst-s-6);
   color: var(--menst-primary);
+}
+
+.hero-tagline {
+  display: block;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--menst-ink) 0%, var(--menst-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: var(--menst-s-2);
 }
 
 h2 {
@@ -78,11 +1583,13 @@ p {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: var(--menst-s-3) var(--menst-s-4);
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: var(--menst-s-3) 32px var(--menst-s-3) 0;
+  max-width: none;
+  margin: 0;
+  width: 100%;
+  position: relative;
 }
 
 .logo {
@@ -92,6 +1599,8 @@ p {
   color: var(--menst-accent);
   text-decoration: none;
   letter-spacing: 0.5px;
+  position: absolute;
+  left: 32px;
 }
 
 .nav-menu {
@@ -148,7 +1657,7 @@ p {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -200px;
   background: white;
   border-radius: var(--menst-r-lg);
   box-shadow: var(--menst-shadow-2);
@@ -274,10 +1783,11 @@ p {
   text-align: left;
   position: relative;
   z-index: 2;
+  margin-top: var(--menst-s-12);
 }
 
 .hero-content h1 {
-  margin-bottom: var(--menst-s-4);
+  margin-bottom: var(--menst-s-8);
   background: linear-gradient(135deg, var(--menst-ink) 0%, var(--menst-accent) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -287,7 +1797,7 @@ p {
 .hero-content p {
   font-size: 1.25rem;
   color: var(--menst-steel);
-  margin-bottom: var(--menst-s-6);
+  margin-bottom: var(--menst-s-10);
 }
 
 .hero-actions {
@@ -295,6 +1805,7 @@ p {
   gap: var(--menst-s-4);
   flex-wrap: wrap;
   margin-bottom: var(--menst-s-8);
+  margin-top: var(--menst-s-8);
 }
 
 .hero-image {
@@ -401,10 +1912,7 @@ p {
 }
 
 .ebook-card h3 {
-  background: linear-gradient(135deg, var(--menst-ink) 0%, var(--menst-accent) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--menst-ink);
   font-size: 0.9rem;
   font-weight: 700;
   margin: 0;
@@ -413,15 +1921,29 @@ p {
   overflow: hidden;
 }
 
+.ebook-collapsed {
+  display: inline;
+  font-size: 1.2rem;
+}
+
+.ebook-expanded {
+  display: none;
+}
+
 .ebook-card:hover h3 {
-  background: linear-gradient(135deg, var(--menst-ink) 0%, var(--menst-accent) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--menst-ink);
   font-size: 1.4rem;
   margin-bottom: var(--menst-s-4);
   white-space: normal;
   text-align: center;
+}
+
+.ebook-card:hover .ebook-collapsed {
+  display: none;
+}
+
+.ebook-card:hover .ebook-expanded {
+  display: inline;
 }
 
 .ebook-card p {
@@ -765,6 +2287,18 @@ p {
   position: relative;
   transition: all var(--menst-motion);
   border-radius: var(--menst-r-md) var(--menst-r-md) 0 0;
+  overflow: hidden;
+}
+
+.pack-tab::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transition: left 0.5s ease;
 }
 
 .pack-tab.active {
@@ -775,6 +2309,13 @@ p {
 .pack-tab:hover:not(.active) {
   color: var(--menst-accent);
   background: var(--menst-cloud);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(14, 107, 255, 0.2);
+  animation: tab-glow 0.4s ease-in-out;
+}
+
+.pack-tab:hover::before {
+  left: 100%;
 }
 
 .pack-content {
@@ -791,28 +2332,320 @@ p {
 
 .pack-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--menst-s-8);
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--menst-s-6);
   margin: var(--menst-s-8) 0;
+}
+
+@media (max-width: 1024px) {
+  .pack-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--menst-s-4);
+  }
+}
+
+@media (max-width: 768px) {
+  .pack-grid {
+    grid-template-columns: 1fr;
+    gap: var(--menst-s-4);
+  }
 }
 
 .pack-item {
   text-align: center;
-  padding: var(--menst-s-6);
+  padding: var(--menst-s-4);
   background: var(--menst-paper);
   border-radius: var(--menst-r-lg);
   transition: all var(--menst-motion);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.pack-item.pack-item-brotox {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-brotox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/360_F_1672051496_PkIQ5L8oaqgfqG1zGWjiprjqjFzMUjkI.webp') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-brotox h3,
+.pack-item.pack-item-brotox p {
+}
+
+.pack-item.pack-item-brotox h3,
+.pack-item.pack-item-brotox p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
+}
+
+.pack-item.pack-item-jawline {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-jawline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/jawline-bg.jpg') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-jawline h3,
+.pack-item.pack-item-jawline p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
+}
+
+.pack-item.pack-item-meso {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-meso::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/meso-bg.jpg') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-meso h3,
+.pack-item.pack-item-meso p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
+}
+
+.pack-item.pack-item-hyaluron {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-hyaluron::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/hyaluron-bg.webp') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-hyaluron h3,
+.pack-item.pack-item-hyaluron p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
+}
+
+.pack-item.pack-item-botox-schwitzen {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-botox-schwitzen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/botox-schwitzen-bg.jpg') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-botox-schwitzen h3,
+.pack-item.pack-item-botox-schwitzen p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
+}
+
+.pack-item.pack-item-infusion {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-infusion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/infusion-bg.webp') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-infusion h3,
+.pack-item.pack-item-infusion p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
+}
+
+.pack-item.pack-item-microneedling {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-microneedling::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/microneedling-bg.jpg') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-microneedling h3,
+.pack-item.pack-item-microneedling p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
+}
+
+.pack-item.pack-item-nad {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-nad::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/nad-bg.png') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-nad h3,
+.pack-item.pack-item-nad p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
+}
+
+.pack-item.pack-item-biostim {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-biostim::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/biostim-bg.jpg') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-biostim h3,
+.pack-item.pack-item-biostim p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
+}
+
+.pack-item.pack-item-fettweg {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-fettweg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/fett-weg-bg.jpg') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-fettweg h3,
+.pack-item.pack-item-fettweg p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
+}
+
+.pack-item.pack-item-sportmedizin {
+  background: var(--menst-paper) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack-item.pack-item-sportmedizin::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../images/sportmedizin-bg.jpg') no-repeat center / cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.pack-item.pack-item-sportmedizin h3,
+.pack-item.pack-item-sportmedizin p {
+  color: var(--menst-ink) !important;
+  font-weight: 600 !important;
 }
 
 .pack-item:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--menst-shadow-2);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(14, 107, 255, 0.3);
+  animation: card-glow 0.6s ease-in-out;
 }
 
 .pack-icon {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto var(--menst-s-6);
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--menst-s-4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -824,13 +2657,50 @@ p {
 }
 
 .pack-item h3 {
-  color: var(--menst-primary);
-  margin-bottom: var(--menst-s-4);
+  color: var(--menst-steel);
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: opacity var(--menst-motion), transform var(--menst-motion);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
 }
 
 .pack-item p {
   color: var(--menst-steel);
   line-height: 1.6;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  transition: opacity var(--menst-motion);
+  font-weight: 500;
+  z-index: 2;
+  margin: 0;
+  text-align: center;
+  padding: var(--menst-s-2);
+}
+
+/* Show paragraph on hover, hide heading */
+.pack-item:hover h3 {
+  opacity: 0;
+  transform: translate(-50%, -60%);
+}
+
+.pack-item:hover p {
+  opacity: 1;
+}
+
+/* Blur background on hover for items with background images */
+.pack-item:hover::before {
+  filter: blur(3px);
+  transform: scale(1.05);
 }
 
 .pack-investment {
@@ -1171,6 +3041,36 @@ p {
 @keyframes button-glow {
   0%, 100% { box-shadow: 0 0 20px rgba(14, 107, 255, 0.4); }
   50% { box-shadow: 0 0 30px rgba(14, 107, 255, 0.7); }
+}
+
+@keyframes card-glow {
+  0% { 
+    box-shadow: var(--menst-shadow-2);
+    transform: translateY(-8px) scale(1.02);
+  }
+  50% { 
+    box-shadow: 0 20px 50px rgba(14, 107, 255, 0.4);
+    transform: translateY(-10px) scale(1.05);
+  }
+  100% { 
+    box-shadow: 0 15px 40px rgba(14, 107, 255, 0.3);
+    transform: translateY(-8px) scale(1.02);
+  }
+}
+
+@keyframes tab-glow {
+  0% { 
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(14, 107, 255, 0.2);
+  }
+  50% { 
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(14, 107, 255, 0.3);
+  }
+  100% { 
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(14, 107, 255, 0.2);
+  }
 }
 
 .package-card.featured .package-btn:hover {
