@@ -100,7 +100,7 @@
                 <div class="hero-content">
                     <h1>Ästhetische Medizin für Männer<br>
                     <span class="hero-tagline">The New Masculinity</span></h1>
-                    <p>Stark, gepflegt, authentisch. Ganzheitliche Männerästhetik mit medizinischem Anspruch – für den modernen Mann, der Wert auf natürliche, kraftvolle Ergebnisse legt. Von Männern. Für Männer.</p>
+                    <p>Stark, gepflegt, authentisch. Ganzheitliche Männerästhetik mit medizinischem Anspruch – für den modernen Mann, der Wert auf natürliche, kraftvolle Ergebnisse legt.</p>
                     <div class="hero-actions">
                         <button id="cmp.menst-cta-primary" class="btn--menst-primary">
                             Beratungstermin buchen
@@ -232,13 +232,29 @@
             </div>
         </section>
 
-        <!-- Services Overview CTA -->
-        <section id="sec.menst-services" class="services-overview-cta">
-            <div class="container-narrow">
-                <div class="services-cta-content">
-                    <h2 style="color: var(--menst-ink);">Alle Leistungen</h2>
-                    <p style="color: var(--menst-ink);">Komplette Übersicht unserer ästhetischen Behandlungen mit transparenten Preisen. Professionelle Männermedizin auf höchstem Niveau.</p>
-                    <a href="alle-leistungen.html" class="btn--menst-primary">Alle Behandlungen ansehen</a>
+        <!-- Philosophy Overview -->
+        <section id="sec.menst-philosophy-cta" class="philosophy">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Unsere Philosophie</h2>
+                    <p class="philosophy-tagline">The New Masculinity</p>
+                </div>
+                
+                <div class="philosophy-content">
+                    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                        <h3>Männlichkeit neu definiert: stark, gepflegt, authentisch.</h3>
+                        <div style="text-align: left; line-height: 1.8; font-size: 1.1rem; color: var(--menst-steel); margin: var(--menst-s-6) 0;">
+                            <p>Der moderne Mann trägt Verantwortung – beruflich, privat, mental. Er arbeitet hart, trifft Entscheidungen, steht unter Druck – oft 50 oder 60 Stunden pro Woche.</p>
+                            <p><strong>Doch wer ständig funktioniert, darf nicht vergessen, auch auf sich selbst zu achten.</strong></p>
+                            <p>Stress, Schlafmangel und Belastung beschleunigen den Alterungsprozess. Das Ergebnis: müde Haut, nachlassende Energie, ein Gesicht, das nicht mehr das widerspiegelt, was in dir steckt.</p>
+                            <p>Bei Mensthetic geht es nicht darum, anders zu wirken – sondern du selbst zu bleiben. Nur besser. Frischer. Vitaler. Maskuliner.<br>
+                            So, dass Menschen dich ansehen und denken: <em>"Der wirkt stark. Der strahlt Energie aus."</em></p>
+                        </div>
+                        
+                        <div style="margin-top: var(--menst-s-8);">
+                            <a href="alle-leistungen.html" class="btn--menst-primary">Alle Behandlungen ansehen</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -256,7 +272,7 @@
                         
                         <div class="freddy-story-with-image">
                             <div class="freddy-main-image" style="margin-top: 8px;">
-                                <img src="images/freddy-portrait.jpg" alt="Freddy - Gründer von Mensthetic" class="freddy-photo" style="object-fit: cover; object-position: center 60%;">
+                                <img src="images/IMG_0151.jpg" alt="Freddy - Gründer von Mensthetic" class="freddy-photo" style="object-fit: cover; object-position: 50% 20%; width: 120%; height: 120%; margin: -10%;">
                                 <div class="image-overlay">
                                     <span class="image-caption">Freddy - Gründer & Heilpraktiker</span>
                                 </div>
@@ -279,40 +295,19 @@
             </div>
         </section>
 
-        <!-- Philosophy Section -->
-        <section id="sec.menst-philosophy" class="philosophy">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Unsere Philosophie</h2>
-                    <p class="philosophy-tagline">The New Masculinity</p>
-                </div>
-                
-                <div class="philosophy-content">
-                    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                        <h3>Männlichkeit neu definiert: stark, gepflegt, authentisch.</h3>
-                        <div style="text-align: left; line-height: 1.8; font-size: 1.1rem; color: var(--menst-steel); margin: var(--menst-s-6) 0;">
-                            <p>Der moderne Mann trägt Verantwortung – beruflich, privat, mental. Er arbeitet hart, trifft Entscheidungen, steht unter Druck – oft 50 oder 60 Stunden pro Woche.</p>
-                            <p><strong>Doch wer ständig funktioniert, darf nicht vergessen, auch auf sich selbst zu achten.</strong></p>
-                            <p>Stress, Schlafmangel und Belastung beschleunigen den Alterungsprozess. Das Ergebnis: müde Haut, nachlassende Energie, ein Gesicht, das nicht mehr das widerspiegelt, was in dir steckt.</p>
-                            <p>Bei Mensthetic geht es nicht darum, anders zu wirken – sondern du selbst zu bleiben. Nur besser. Frischer. Vitaler. Maskuliner.<br>
-                            So, dass Menschen dich ansehen und denken: <em>"Der wirkt stark. Der strahlt Energie aus."</em></p>
-                        </div>
-                        
-                        <div style="margin-top: var(--menst-s-8);">
-                            <a href="ueber-uns/philosophie.html" class="btn--menst-primary">Unsere Philosophie</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Before/After Section (Password Protected) -->
         <section id="sec.menst-before-after" class="before-after password-protected">
             <div class="container">
-                <div class="section-header">
-                    <h2>Vorher / Nachher</h2>
+                <div class="section-header" style="cursor: pointer;" onclick="toggleBeforeAfterSection()">
+                    <h2>
+                        Resultate
+                        <span id="toggle-arrow" style="margin-left: 10px; transition: transform 0.3s ease;">▼</span>
+                    </h2>
                     <p>Diskrete Ergebnisse, die überzeugen</p>
                 </div>
+                
+                <!-- Collapsible Content -->
+                <div id="before-after-collapsible" style="display: none; transition: all 0.3s ease;">
 
                 <!-- Password Gate Overlay -->
                 <div id="password-gate" class="password-gate">
@@ -388,6 +383,8 @@
                         </div>
                     </div>
                 </div>
+                
+                </div> <!-- End of collapsible content -->
             </div>
         </section>
 
@@ -478,7 +475,7 @@
                 </div>
                 <div class="footer-section">
                     <h3>Rechtliches</h3>
-                    <a href="#impressum" class="footer-link">Impressum</a>
+                    <a href="impressum.html" class="footer-link">Impressum</a>
                     <a href="#datenschutz" class="footer-link">Datenschutz</a>
                     <a href="#agb" class="footer-link">AGB</a>
                 </div>
@@ -622,5 +619,20 @@
     <script src="js/ebook.js"></script>
     <script src="js/env-loader.js"></script>
     <script src="js/supabase-client.js"></script>
+    
+    <script>
+        function toggleBeforeAfterSection() {
+            const collapsibleContent = document.getElementById('before-after-collapsible');
+            const arrow = document.getElementById('toggle-arrow');
+            
+            if (collapsibleContent.style.display === 'none' || collapsibleContent.style.display === '') {
+                collapsibleContent.style.display = 'block';
+                arrow.style.transform = 'rotate(180deg)';
+            } else {
+                collapsibleContent.style.display = 'none';
+                arrow.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
 </body>
 </html>

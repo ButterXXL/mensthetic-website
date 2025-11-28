@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meso-Eyes & Mesotherapie - Augenrevitalisierung für Männer | Mensthetic</title>
-    <meta name="description" content="Professionelle Meso-Eyes Behandlung für Männer. Reduzierung von Augenringen, Fältchen und müden Augen durch gezielte Mesotherapie.">
+    <title>Meso-Eyes & Mesotherapie - Mensthetic</title>
+    <meta name="description" content="Meso-Eyes & Mesotherapie für Augenringe, müde Augen und feine Linien. Wacher Blick. Vitalere Haut. Sofortige Frische und langfristige Regeneration.">
     <link rel="stylesheet" href="../css/menst-tokens.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/menst-animations.css">
@@ -13,7 +13,23 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="../index.html" class="logo">MENSTHETIC</a>
+            <div class="nav-left">
+                <a href="../index.html" class="logo">MENSTHETIC</a>
+                <!-- Language Dropdown -->
+                <div class="language-dropdown dropdown">
+                    <button class="lang-current dropdown-toggle" aria-label="Language">
+                        <span class="current-lang">DE</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="dropdown-menu lang-menu">
+                        <div class="dropdown-content">
+                            <a href="#" class="lang-option active" data-lang="de">🇩🇪 Deutsch</a>
+                            <a href="../en/treatments/meso-eyes.html" class="lang-option" data-lang="en">🇬🇧 English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <ul class="nav-menu">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
                 <li class="dropdown">
@@ -31,8 +47,8 @@
                                 <h4>Masculine Aesthetics</h4>
                                 <a href="brotox.html">"Brotox" / "Maletox"</a>
                                 <a href="jawline-aufbau.html">Jawline & Kinnaufbau</a>
-                                <a href="meso-eyes.html" class="active">Meso-Eyes & Mesotherapie</a>
-                                <a href="hyaluron-filler.html">Hyaluron-Filler</a>
+                                <a href="meso-eyes.html">Meso-Eyes & Mesotherapie</a>
+                                <a href="hyaluron.html">Hyaluron-Filler</a>
                             </div>
                             <div class="dropdown-column">
                                 <h4>Performance & Health</h4>
@@ -41,9 +57,15 @@
                                 <a href="fett-weg-spritze.html">Fett-weg-Spritze</a>
                                 <a href="botox-schwitzen.html">Botox gegen Schwitzen</a>
                             </div>
+                            <div class="dropdown-column">
+                                <h4>Übersicht</h4>
+                                <a href="../alle-leistungen.html" class="featured-link">Alle Leistungen & Preise</a>
+                            </div>
                         </div>
                     </div>
                 </li>
+                <li><a href="../index.html#sec.menst-before-after" class="nav-link">Resultate</a></li>
+                <li><a href="../index.html#sec.menst-shop" class="nav-link">Shop</a></li>
                 <li class="dropdown">
                     <a href="#" class="nav-link dropdown-toggle">Über uns</a>
                     <div class="dropdown-menu">
@@ -58,369 +80,213 @@
                     </div>
                 </li>
             </ul>
-            <button class="menu-toggle" aria-label="Menü öffnen">☰</button>
+            <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
         </div>
     </nav>
 
     <main>
-        <!-- Hero Section -->
-        <section class="treatment-hero">
+        <!-- Treatment Hero Section -->
+        <section class="treatment-hero treatment-hero-meso">
             <div class="container">
                 <div class="treatment-hero-content">
                     <div class="treatment-category">Masculine Aesthetics</div>
                     <h1>Meso-Eyes & Mesotherapie</h1>
-                    <p class="treatment-subtitle">Strahlende Augen und vitaler Blick für den modernen Mann</p>
-                    <div class="treatment-highlights">
-                        <div class="highlight-item">
-                            <span class="highlight-icon">👁️</span>
-                            <span>Augenringe reduzieren</span>
+                    <p class="treatment-tagline">Wacher Blick. Vitalere Haut.</p>
+                    <p class="treatment-intro">Gezielte Nährstoffinjektionen direkt in die Augenpartie bekämpfen Augenringe, müde Augen und feine Linien – für einen frischen, vitalen Look, der Ihre natürliche Männlichkeit unterstreicht.</p>
+                    
+                    <div class="treatment-quick-facts">
+                        <div class="quick-fact">
+                            <div class="fact-content">
+                                <strong>Dauer</strong>
+                                <span>ca. 30-40 Minuten</span>
+                            </div>
                         </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">⚡</span>
-                            <span>Sofortige Frische</span>
+                        <div class="quick-fact">
+                            <div class="fact-content">
+                                <strong>Serie</strong>
+                                <span>3-4 Sitzungen</span>
+                            </div>
                         </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">💪</span>
-                            <span>Natürliche Regeneration</span>
+                        <div class="quick-fact">
+                            <div class="fact-content">
+                                <strong>Downtime</strong>
+                                <span>minimal</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="treatment-cta">
+                        <button class="btn--menst-primary">Jetzt Termin vereinbaren</button>
+                        <button class="btn--menst-quiet">Kostenlose Beratung</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatment Details -->
+        <section class="treatment-details">
+            <div class="container">
+                <div class="details-grid">
+                    <div class="detail-section">
+                        <h2>Warum Meso-Eyes für Männer:</h2>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="benefit-content">
+                                    <h3>Augenringe reduzieren</h3>
+                                    <p>Gezielte Nährstoffkomplexe verbessern die Durchblutung und reduzieren dunkle Verfärbungen sichtbar.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-content">
+                                    <h3>Sofortige Frische</h3>
+                                    <p>Direkte Hydratation und Vitalisierung lassen müde Augen sofort wacher und energiegeladener wirken.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-content">
+                                    <h3>Langfristige Regeneration</h3>
+                                    <p>Stimuliert die körpereigene Kollagenproduktion für nachhaltig straffere und glattere Haut.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h2>Behandlungsdetails:</h2>
+                        <div class="treatment-specs">
+                            <div class="spec-item">
+                                <strong>Dauer:</strong> ca. 30-40 Minuten
+                            </div>
+                            <div class="spec-item">
+                                <strong>Serie:</strong> 3-4 Sitzungen im Abstand von 2-4 Wochen
+                            </div>
+                            <div class="spec-item">
+                                <strong>Downtime:</strong> minimal, kleine Schwellungen möglich
+                            </div>
+                            <div class="spec-item">
+                                <strong>Behandlungsbereich:</strong> Augenpartie, Tränensäcke, Krähenfüße
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Treatment Content -->
-        <section class="treatment-content">
+        <!-- How It Works -->
+        <section class="treatment-process">
             <div class="container">
-                <div class="treatment-grid">
-                    <!-- Main Content -->
-                    <div class="treatment-main">
-                        <!-- Introduction -->
-                        <div class="content-section">
-                            <h2>Vitale Augenpartie für den professionellen Auftritt</h2>
-                            <p>Müde, geschwollene Augen und dunkle Augenringe können selbst den erfolgreichsten Mann alt und erschöpft wirken lassen. Unsere Meso-Eyes Behandlung kombiniert gezielte Mesotherapie mit hochkonzentrierten Wirkstoffen, um die Augenpartie zu revitalisieren und einen wachen, energiegeladenen Blick zu schaffen.</p>
-                            
-                            <div class="treatment-overview">
-                                <div class="overview-item">
-                                    <h4>Behandlungstyp</h4>
-                                    <p>Mikro-Injektionen</p>
-                                </div>
-                                <div class="overview-item">
-                                    <h4>Dauer</h4>
-                                    <p>30-40 Minuten</p>
-                                </div>
-                                <div class="overview-item">
-                                    <h4>Ausfallzeit</h4>
-                                    <p>Keine bis minimal</p>
-                                </div>
-                                <div class="overview-item">
-                                    <h4>Behandlungsserie</h4>
-                                    <p>3-4 Sitzungen</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Scientific Background -->
-                        <div class="content-section">
-                            <h2>Wissenschaftlicher Hintergrund</h2>
-                            <div class="science-content">
-                                <h3>Anatomie der periorbitalen Region</h3>
-                                <p>Die Augenpartie ist besonders anspruchsvoll in der Behandlung:</p>
-                                <ul>
-                                    <li><strong>Dünne Haut:</strong> 0,5mm Dicke vs. 2mm im übrigen Gesicht</li>
-                                    <li><strong>Geringe Talgdrüsendichte:</strong> Reduzierte natürliche Feuchtigkeitsbarriere</li>
-                                    <li><strong>Intensive Muskeltätigkeit:</strong> 15.000-20.000 Lidschläge täglich</li>
-                                    <li><strong>Lymphatische Drainage:</strong> Anfällig für Stauungen und Schwellungen</li>
-                                </ul>
-
-                                <h3>Mesotherapie-Wirkstoffkomplexe</h3>
-                                <p>Unsere evidenzbasierten Formulierungen für optimale Ergebnisse:</p>
-                                
-                                <div class="technique-grid">
-                                    <div class="technique-item">
-                                        <h4>Hyaluronsäure + Vitamin C</h4>
-                                        <p>Intensive Feuchtigkeitsversorgung und antioxidativer Schutz. Stimuliert Kollagensynthese und reduziert Pigmentierung.</p>
-                                    </div>
-                                    <div class="technique-item">
-                                        <h4>Peptidkomplexe</h4>
-                                        <p>Biomimetische Peptide zur Muskelentspannung und Kollagenregeneration. Matrixyl 3000 für Anti-Aging-Wirkung.</p>
-                                    </div>
-                                    <div class="technique-item">
-                                        <h4>Koffein + Arnika</h4>
-                                        <p>Gefäßtonisierung und Lymphdrainage. Reduziert Schwellungen und verbessert Mikrozirkulation.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Treatment Process -->
-                        <div class="content-section">
-                            <h2>Behandlungsablauf</h2>
-                            <div class="process-steps">
-                                <div class="step">
-                                    <div class="step-number">1</div>
-                                    <div class="step-content">
-                                        <h3>Hautanalyse & Anamnese</h3>
-                                        <p>Detaillierte Untersuchung der Augenpartie, Analyse von Hautzustand, Pigmentierung und Schwellungsneigung. Festlegung individueller Behandlungsziele.</p>
-                                    </div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">2</div>
-                                    <div class="step-content">
-                                        <h3>Vorbereitung & Desinfektion</h3>
-                                        <p>Gründliche Reinigung und Desinfektion der Augenpartie. Optionale Anwendung einer betäubenden Creme für erhöhten Komfort.</p>
-                                    </div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">3</div>
-                                    <div class="step-content">
-                                        <h3>Präzise Mikro-Injektionen</h3>
-                                        <p>Gezielte Applikation der Wirkstoffkomplexe in verschiedene Hautschichten. Point-by-Point Technik für optimale Verteilung und Sicherheit.</p>
-                                    </div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">4</div>
-                                    <div class="step-content">
-                                        <h3>Nachbehandlung & Pflege</h3>
-                                        <p>Sanfte Massage zur Wirkstoffverteilung. Kühlung bei Bedarf und ausführliche Nachsorgeberatung für optimale Heilung.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Benefits -->
-                        <div class="content-section">
-                            <h2>Ihre Vorteile</h2>
-                            <div class="benefits-grid">
-                                <div class="benefit-item">
-                                    <div class="benefit-icon">👁️</div>
-                                    <h3>Reduzierte Augenringe</h3>
-                                    <p>Sichtbare Aufhellung dunkler Augenringe durch verbesserte Mikrozirkulation und Pigmentreduktion.</p>
-                                </div>
-                                <div class="benefit-item">
-                                    <div class="benefit-icon">⚡</div>
-                                    <h3>Sofortige Frische</h3>
-                                    <p>Unmittelbare Hydratation und Straffung für einen wachen, vitalen Blick bereits nach der ersten Sitzung.</p>
-                                </div>
-                                <div class="benefit-item">
-                                    <div class="benefit-icon">🔬</div>
-                                    <h3>Langzeit-Regeneration</h3>
-                                    <p>Nachhaltige Verbesserung der Hautqualität durch stimulierte Kollagenproduktion und Zellregeneration.</p>
-                                </div>
-                                <div class="benefit-item">
-                                    <div class="benefit-icon">💪</div>
-                                    <h3>Natürliche Ergebnisse</h3>
-                                    <p>Subtile Verbesserung ohne Überbehandlung - Sie sehen aus wie Sie selbst, nur ausgeruhter und vitaler.</p>
-                                </div>
-                                <div class="benefit-item">
-                                    <div class="benefit-icon">🎖️</div>
-                                    <h3>Berufstauglich</h3>
-                                    <p>Keine Ausfallzeiten - Sie können direkt nach der Behandlung wieder arbeiten und Termine wahrnehmen.</p>
-                                </div>
-                                <div class="benefit-item">
-                                    <div class="benefit-icon">🧠</div>
-                                    <h3>Präventive Wirkung</h3>
-                                    <p>Vorbeugende Anti-Aging-Wirkung durch regelmäßige Anwendung verhindert vorzeitige Hautalterung.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Conditions Treated -->
-                        <div class="content-section">
-                            <h2>Behandelbare Probleme</h2>
-                            <div class="conditions-grid">
-                                <div class="condition-item">
-                                    <h3>Augenringe & Pigmentierung</h3>
-                                    <p>Dunkle Verfärbungen unter den Augen durch Melaninüberschuss, Gefäßtransparenz oder Erschöpfung.</p>
-                                </div>
-                                <div class="condition-item">
-                                    <h3>Tränensäcke & Schwellungen</h3>
-                                    <p>Lymphatische Stauungen und Wassereinlagerungen, die zu müden Augen führen.</p>
-                                </div>
-                                <div class="condition-item">
-                                    <h3>Feine Linien & Krähenfüße</h3>
-                                    <p>Erste Anzeichen der Hautalterung durch Mimikaktivität und UV-Schäden.</p>
-                                </div>
-                                <div class="condition-item">
-                                    <h3>Hauttrockenheit & Spannungsgefühl</h3>
-                                    <p>Reduzierte Hautfeuchtigkeit und gestörte Barrierefunktion der empfindlichen Augenpartie.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Ideal Candidates -->
-                        <div class="content-section">
-                            <h2>Für wen ist die Behandlung geeignet?</h2>
-                            <div class="candidates-grid">
-                                <div class="candidate-group">
-                                    <h3>Ideal geeignet</h3>
-                                    <ul>
-                                        <li>Männer ab 25 Jahren mit ersten Alterungszeichen</li>
-                                        <li>Berufstätige mit stressigem Alltag</li>
-                                        <li>Ausgeprägte Augenringe oder Müdigkeitszeichen</li>
-                                        <li>Wunsch nach natürlicher Revitalisierung</li>
-                                        <li>Präventive Anti-Aging-Behandlung</li>
-                                    </ul>
-                                </div>
-                                <div class="candidate-group">
-                                    <h3>Nicht geeignet</h3>
-                                    <ul>
-                                        <li>Akute Augeninfektionen oder Entzündungen</li>
-                                        <li>Bekannte Allergien gegen Behandlungssubstanzen</li>
-                                        <li>Schwere Hauterkrankungen im Behandlungsbereich</li>
-                                        <li>Einnahme blutverdünnender Medikamente</li>
-                                        <li>Realistische Erwartungen erforderlich</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                <div class="section-header">
+                    <h2>Wie funktioniert Meso-Eyes?</h2>
+                    <p>Gezielte Revitalisierung in drei Schritten</p>
+                </div>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Hautanalyse</h3>
+                        <p>Detaillierte Begutachtung der Augenpartie und Bestimmung des optimalen Nährstoffkomplexes für Ihre spezifischen Bedürfnisse.</p>
                     </div>
-
-                    <!-- Sidebar -->
-                    <div class="treatment-sidebar">
-                        <!-- Booking CTA -->
-                        <div class="booking-card">
-                            <h3>Beratungstermin vereinbaren</h3>
-                            <p>Lassen Sie sich unverbindlich über Ihre Möglichkeiten beraten.</p>
-                            <button class="btn--menst-primary full-width">Termin buchen</button>
-                            <div class="contact-info">
-                                <p><strong>Telefonische Beratung:</strong></p>
-                                <p>Mo-Fr: 9:00-18:00 Uhr</p>
-                                <p>Tel: +49 (0)30 12345678</p>
-                            </div>
-                        </div>
-
-                        <!-- Price Info -->
-                        <div class="price-card">
-                            <h3>Investition</h3>
-                            <div class="price-item">
-                                <span class="price-label">Einzelbehandlung</span>
-                                <span class="price-value">ab 180€</span>
-                            </div>
-                            <div class="price-item">
-                                <span class="price-label">3er-Paket</span>
-                                <span class="price-value">ab 480€</span>
-                            </div>
-                            <div class="price-item">
-                                <span class="price-label">4er-Kur</span>
-                                <span class="price-value">ab 600€</span>
-                            </div>
-                            <p class="price-note">*Behandlungsserie für optimale Ergebnisse empfohlen</p>
-                        </div>
-
-                        <!-- Quick Facts -->
-                        <div class="facts-card">
-                            <h3>Auf einen Blick</h3>
-                            <div class="fact-item">
-                                <span class="fact-label">Behandlungsdauer:</span>
-                                <span class="fact-value">30-40 Min</span>
-                            </div>
-                            <div class="fact-item">
-                                <span class="fact-label">Betäubung:</span>
-                                <span class="fact-value">Optional</span>
-                            </div>
-                            <div class="fact-item">
-                                <span class="fact-label">Ausfallzeit:</span>
-                                <span class="fact-value">Keine</span>
-                            </div>
-                            <div class="fact-item">
-                                <span class="fact-label">Sport:</span>
-                                <span class="fact-value">Nach 12h</span>
-                            </div>
-                            <div class="fact-item">
-                                <span class="fact-label">Erste Ergebnisse:</span>
-                                <span class="fact-value">Sofort</span>
-                            </div>
-                            <div class="fact-item">
-                                <span class="fact-label">Optimales Ergebnis:</span>
-                                <span class="fact-value">Nach 4 Wochen</span>
-                            </div>
-                        </div>
-
-                        <!-- Related Treatments -->
-                        <div class="related-card">
-                            <h3>Kombinierbare Behandlungen</h3>
-                            <div class="related-list">
-                                <a href="microneedling.html" class="related-item">
-                                    <span>Microneedling für Gesamtgesicht</span>
-                                    <span>→</span>
-                                </a>
-                                <a href="prp-therapie.html" class="related-item">
-                                    <span>PRP-Therapie für Regeneration</span>
-                                    <span>→</span>
-                                </a>
-                                <a href="brotox.html" class="related-item">
-                                    <span>Brotox für Stirnfalten</span>
-                                    <span>→</span>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Präzise Injektion</h3>
+                        <p>Mit feinen Mikronadeln werden vitaminreiche Cocktails gezielt in die oberen Hautschichten der Augenpartie injiziert.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Nachsorge</h3>
+                        <p>Sanfte Kühlung und Pflegetipps für optimale Heilung – bereits nach wenigen Stunden ist der Look deutlich frischer.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- FAQ Section -->
-        <section class="faq-section">
+        <section class="treatment-faq">
             <div class="container">
-                <h2>Häufige Fragen zu Meso-Eyes</h2>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <h3>Wie viele Behandlungen sind nötig?</h3>
-                        <p>Für optimale Ergebnisse empfehlen wir eine Serie von 3-4 Behandlungen im Abstand von 2-3 Wochen, gefolgt von Auffrischungen alle 3-6 Monate.</p>
-                    </div>
+                <div class="section-header">
+                    <h2>Häufige Fragen zu Meso-Eyes</h2>
+                </div>
+                
+                <div class="faq-grid">
                     <div class="faq-item">
                         <h3>Ist die Behandlung schmerzhaft?</h3>
-                        <p>Die Behandlung wird als minimal unangenehm empfunden. Bei Bedarf kann eine betäubende Creme aufgetragen werden.</p>
+                        <p>Die Injektionen sind durch feinste Nadeln sehr gut verträglich. Eine betäubende Creme kann auf Wunsch verwendet werden.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Wann sind erste Ergebnisse sichtbar?</h3>
-                        <p>Eine sofortige Verbesserung der Hautfeuchtigkeit ist direkt spürbar. Sichtbare Verbesserungen zeigen sich nach 1-2 Wochen.</p>
+                        <h3>Wie schnell sehe ich Ergebnisse?</h3>
+                        <p>Sofortige Verbesserung der Hautfeuchtigkeit und Frische. Optimale Ergebnisse nach 2-3 Behandlungen sichtbar.</p>
                     </div>
                     <div class="faq-item">
                         <h3>Gibt es Nebenwirkungen?</h3>
-                        <p>Leichte Rötungen oder minimal sichtbare Einstichstellen können für 1-2 Stunden auftreten. Schwellungen sind sehr selten.</p>
+                        <p>Minimal: leichte Rötung oder kleine Schwellungen für 24-48 Stunden. Sehr seltene allergische Reaktionen möglich.</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Kann ich die Behandlung mit anderen kombinieren?</h3>
-                        <p>Ja, Meso-Eyes lässt sich hervorragend mit anderen Behandlungen wie PRP-Therapie oder Microneedling kombinieren.</p>
+                        <h3>Wie lange halten die Ergebnisse?</h3>
+                        <p>6-9 Monate bei regelmäßiger Pflege. Auffrischungsbehandlungen alle 6 Monate empfohlen.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2>Bereit für einen vitalen, wachen Blick?</h2>
-                    <p>Vereinbaren Sie Ihren Beratungstermin für eine individuelle Behandlungsplanung.</p>
-                    <div class="cta-buttons">
-                        <button class="btn--menst-primary">Jetzt Termin buchen</button>
-                        <button class="btn--menst-quiet">Rückruf anfordern</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Spacer Section -->
+        <section class="section-spacer treatment-hero-meso"></section>
+
     </main>
 
+    <!-- Floating Bottom Navigation -->
+    <div class="floating-bottom-nav">
+        <a href="https://www.instagram.com/mensthetic.de?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="floating-nav-item instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Instagram
+        </a>
+        <a href="https://wa.me/4930123456789" target="_blank" class="floating-nav-item whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" fill="currentColor"/>
+            </svg>
+            WhatsApp
+        </a>
+        <a href="../index.html#sec.menst-cta-booking" class="floating-nav-item booking">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Terminbuchung
+        </a>
+    </div>
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="sec.menst-legal" class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>MENSTHETIC</h3>
-                    <p>Ästhetische Medizin für den modernen Mann</p>
+                    <h3>Mensthetic</h3>
+                    <p>Medical Aesthetics for Men – Von Männern. Für Männer. Ganzheitliche Männerästhetik mit medizinischem Anspruch. <strong>Natürlich. Kraftvoll. Männlich.</strong></p>
                 </div>
                 <div class="footer-section">
-                    <h4>Kontakt</h4>
-                    <p>Tel: +49 (0)30 12345678<br>
-                    E-Mail: info@mensthetic.de</p>
+                    <h3>Kontakt</h3>
+                    <p>Musterstraße 123<br>12345 Berlin</p>
+                    <p>Tel: +49 30 12345678<br>info@mensthetic.de</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Rechtliches</h4>
-                    <a href="#">Impressum</a>
-                    <a href="#">Datenschutz</a>
+                    <h3>Öffnungszeiten</h3>
+                    <p>Mo-Fr: 9:00-18:00 Uhr<br>Sa: 10:00-14:00 Uhr<br>So: Geschlossen</p>
                 </div>
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <a href="impressum.html" class="footer-link">Impressum</a>
+                    <a href="#datenschutz" class="footer-link">Datenschutz</a>
+                    <a href="#agb" class="footer-link">AGB</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mensthetic. Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </footer>

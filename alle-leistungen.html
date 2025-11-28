@@ -3,11 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alle Leistungen & Preise - Mensthetic</title>
-    <meta name="description" content="Komplette Übersicht aller ästhetischen Behandlungen und Preise bei Mensthetic. Professionelle Männermedizin mit transparenten Kosten.">
+    <title>Alle Leistungen - Mensthetic</title>
+    <meta name="description" content="Komplette Übersicht aller ästhetischen Behandlungen bei Mensthetic. Professionelle Männermedizin auf höchstem Niveau.">
     <link rel="stylesheet" href="css/menst-tokens.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/menst-animations.css">
+    <style>
+        /* Enhanced Service Cards */
+        .services-category {
+            margin-bottom: var(--menst-s-12);
+            background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(248,250,252,0.9) 100%);
+            border-radius: var(--menst-radius-l);
+            padding: var(--menst-s-8);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .services-category h2 {
+            background: linear-gradient(135deg, var(--menst-steel-blue), var(--menst-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: var(--menst-s-6);
+            text-align: center;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--menst-s-5);
+        }
+        
+        .service-card-enhanced {
+            background: white;
+            border-radius: var(--menst-radius-m);
+            padding: var(--menst-s-6);
+            text-decoration: none;
+            color: var(--menst-ink);
+            transition: all 0.3s ease;
+            border: 1px solid var(--menst-border-light);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card-enhanced::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--menst-steel-blue), var(--menst-accent));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card-enhanced:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-color: var(--menst-steel-blue);
+        }
+        
+        .service-card-enhanced:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-card-enhanced h3 {
+            color: var(--menst-ink);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: var(--menst-s-3);
+            line-height: 1.3;
+        }
+        
+        .service-card-enhanced p {
+            color: var(--menst-steel);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--menst-steel-blue), var(--menst-accent));
+            border-radius: var(--menst-radius-s);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--menst-s-4);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        /* Hero Section */
+        .overview-hero {
+            background: linear-gradient(135deg, var(--menst-steel-blue) 0%, var(--menst-accent) 100%);
+            padding: var(--menst-s-16) 0 var(--menst-s-12);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .overview-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .overview-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .overview-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: var(--menst-s-4);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .overview-hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            line-height: 1.6;
+            margin-bottom: var(--menst-s-8);
+        }
+        
+        @media (max-width: 768px) {
+            .overview-hero h1 {
+                font-size: 2.2rem;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -29,30 +172,29 @@
                     <div class="dropdown-menu">
                         <div class="dropdown-content">
                             <div class="dropdown-column">
-                                <h4>Gesichtsbehandlungen</h4>
-                                <a href="behandlungen/hyaluron.html">Hyaluronsäure</a>
-                                <a href="behandlungen/botox.html">Botox</a>
-                                <a href="behandlungen/facelift.html">Facelift</a>
-                                <a href="behandlungen/augenlidstraffung.html">Augenlidstraffung</a>
-                                <a href="behandlungen/nasenkorrektur.html">Nasenkorrektur</a>
+                                <h4>Regenerative Medicine</h4>
+                                <a href="behandlungen/prp-therapie.html">PRP Eigenbluttherapie</a>
+                                <a href="behandlungen/nad-infusion.html">NAD+ Infusionen</a>
+                                <a href="behandlungen/biostimulatoren.html">Biostimulatoren</a>
+                                <a href="behandlungen/microneedling.html">Medizinisches Microneedling</a>
                             </div>
                             <div class="dropdown-column">
-                                <h4>Körperbehandlungen</h4>
-                                <a href="behandlungen/lipolyse.html">Lipolyse</a>
-                                <a href="behandlungen/gynakomastie.html">Gynäkomastie</a>
-                                <a href="behandlungen/fettabsaugung.html">Fettabsaugung</a>
-                                <a href="behandlungen/bauchstraffung.html">Bauchstraffung</a>
+                                <h4>Masculine Aesthetics</h4>
+                                <a href="behandlungen/brotox.html">"Brotox" / "Maletox"</a>
+                                <a href="behandlungen/jawline-aufbau.html">Jawline & Kinnaufbau</a>
+                                <a href="behandlungen/meso-eyes.html">Meso-Eyes & Mesotherapie</a>
+                                <a href="behandlungen/hyaluron.html">Hyaluron-Filler</a>
                             </div>
                             <div class="dropdown-column">
-                                <h4>Männermedizin</h4>
-                                <a href="behandlungen/hormon-analyse.html">Hormon-Analyse</a>
-                                <a href="behandlungen/testosteron.html">Testosteron-Therapie</a>
-                                <a href="behandlungen/haarausfall.html">Haarausfall-Behandlung</a>
-                                <a href="behandlungen/hyperhidrose.html">Hyperhidrose</a>
+                                <h4>Performance & Health</h4>
+                                <a href="behandlungen/sportmedizin.html">Sportmedizin & Leistungsdiagnostik</a>
+                                <a href="behandlungen/infusionstherapie.html">Infusionstherapie</a>
+                                <a href="behandlungen/fett-weg-spritze.html">Fett-weg-Spritze</a>
+                                <a href="behandlungen/botox-schwitzen.html">Botox gegen Schwitzen</a>
                             </div>
                             <div class="dropdown-column">
                                 <h4>Übersicht</h4>
-                                <a href="alle-leistungen.html" class="featured-link">Alle Leistungen & Preise</a>
+                                <a href="alle-leistungen.html" class="featured-link">Alle Leistungen</a>
                             </div>
                         </div>
                     </div>
@@ -80,436 +222,171 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="page-hero">
+        <section class="overview-hero">
             <div class="container">
-                <div class="hero-content">
-                    <h1 style="color: var(--menst-ink);">Alle Leistungen & Preise</h1>
-                    <p style="color: var(--menst-ink);">Komplette Übersicht unserer ästhetischen Behandlungen mit transparenten Preisen. Professionelle Männermedizin auf höchstem Niveau.</p>
+                <div class="overview-hero-content">
+                    <h1>Alle Leistungen</h1>
+                    <p>Komplette Übersicht unserer ästhetischen Behandlungen. Professionelle Männermedizin auf höchstem Niveau – speziell für den modernen Mann entwickelt.</p>
                 </div>
             </div>
         </section>
 
         <!-- Services Overview -->
-        <section class="services-overview">
+        <section class="services-overview" style="padding: var(--menst-s-12) 0;">
             <div class="container">
                 
                 <!-- Regenerative Medizin -->
-                <div class="service-category">
+                <div class="services-category">
                     <h2>Regenerative Medizin & Vitalität</h2>
                     <div class="services-grid">
-                        
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>PRP – Eigenbluttherapie für Haar & Haut</h3>
-                                    <div class="price-range">ab 420€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>PRP Haarbehandlung</span><span>480€</span></li>
-                                        <li><span>PRP Gesicht ("Vampire Facial")</span><span>420€</span></li>
-                                        <li><span>PRP Bartwuchs</span><span>380€</span></li>
-                                        <li><span>3er-Paket</span><span>1.080€</span></li>
-                                    </ul>
-                                    <p class="service-description">Mit Ihrem eigenen Blut aktivieren wir körpereigene Wachstumsfaktoren – für dichteres Haar, glattere Haut und sichtbar mehr Vitalität. Klinisch belegt: Steigerung der Haardichte um bis zu 25%.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: PRP Behandlung</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Mesotherapie & Meso-Eyes</h3>
-                                    <div class="price-range">ab 280€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Meso-Eyes Augenringe</span><span>280€</span></li>
-                                        <li><span>Gesichts-Mesotherapie</span><span>320€</span></li>
-                                        <li><span>Skin-Booster Deluxe</span><span>380€</span></li>
-                                        <li><span>3er-Paket</span><span>820€</span></li>
-                                    </ul>
-                                    <p class="service-description">Reduziert Augenringe, Fältchen und Müdigkeitszeichen. Skin-Booster mit Vitaminen & Hyaluronsäure für wache Augen und frische Ausstrahlung.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Mesotherapie</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Medizinisches Microneedling</h3>
-                                    <div class="price-range">ab 320€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Basis Microneedling</span><span>320€</span></li>
-                                        <li><span>Mit PRP ("Vampire Lifting")</span><span>520€</span></li>
-                                        <li><span>Mit Biostimulatoren</span><span>480€</span></li>
-                                        <li><span>Mit Botox (Glasskin)</span><span>580€</span></li>
-                                    </ul>
-                                    <p class="service-description">Aktiviert Fibroblasten, steigert Kollagen- & Elastinbildung. Perfekt zur Hautverjüngung, Porenverfeinerung und Revitalisierung.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Microneedling</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Biostimulatoren & Struktur-Aufbau</h3>
-                                    <div class="price-range">ab 480€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Radiesse (CaHA)</span><span>580€</span></li>
-                                        <li><span>Polynukleotide</span><span>480€</span></li>
-                                        <li><span>Exosomen-Therapie</span><span>680€</span></li>
-                                        <li><span>Kombinationsbehandlung</span><span>980€</span></li>
-                                    </ul>
-                                    <p class="service-description">Regeneration statt Volumen. Stärkt die Hautstruktur von innen, fördert natürliche Kollagenbildung für langfristige Spannkraft.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Biostimulatoren</div>
-                            </div>
-                        </div>
-
+                        <a href="behandlungen/prp-therapie.html" class="service-card-enhanced">
+                            <div class="service-icon">🩸</div>
+                            <h3>PRP Eigenbluttherapie</h3>
+                            <p>Natürlich. Regenerativ. Effektiv. Aktiviert körpereigene Wachstumsfaktoren für dichteres Haar und vitalere Haut.</p>
+                        </a>
+                        <a href="behandlungen/nad-infusion.html" class="service-card-enhanced">
+                            <div class="service-icon">⚡</div>
+                            <h3>NAD+ Infusionen</h3>
+                            <p>Zellenergie & Performance von innen. Spürbare Energie, klarer Fokus, nachhaltige Regeneration.</p>
+                        </a>
+                        <a href="behandlungen/biostimulatoren.html" class="service-card-enhanced">
+                            <div class="service-icon">🔬</div>
+                            <h3>Biostimulatoren</h3>
+                            <p>Regeneration statt Volumen. Stärkt die Hautstruktur von innen und fördert natürliche Kollagenbildung.</p>
+                        </a>
+                        <a href="behandlungen/microneedling.html" class="service-card-enhanced">
+                            <div class="service-icon">✨</div>
+                            <h3>Medizinisches Microneedling</h3>
+                            <p>Feine Stimulation, große Wirkung. Aktiviert Fibroblasten für sichtbar mehr Spannkraft.</p>
+                        </a>
+                        <a href="behandlungen/meso-eyes.html" class="service-card-enhanced">
+                            <div class="service-icon">👁️</div>
+                            <h3>Meso-Eyes & Mesotherapie</h3>
+                            <p>Wacher Blick. Vitalere Haut. Reduziert Augenringe und Müdigkeitszeichen für frische Ausstrahlung.</p>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Gesichtsbehandlungen -->
-                <div class="service-category">
-                    <h2>Maskuline Konturierung</h2>
+                <!-- Masculine Aesthetics -->
+                <div class="services-category">
+                    <h2>Masculine Aesthetics</h2>
                     <div class="services-grid">
-                        
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Jawline- & Kinnaufbau</h3>
-                                    <div class="price-range">ab 580€/ml</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Kieferlinie (1ml)</span><span>580€</span></li>
-                                        <li><span>Kinnaufbau (1ml)</span><span>580€</span></li>
-                                        <li><span>Wangenkontur (2ml)</span><span>1.080€</span></li>
-                                        <li><span>Full Face Masculinization</span><span>2.280€</span></li>
-                                    </ul>
-                                    <p class="service-description">Markante Linien, starke Wirkung. Mit Hyaluron-Fillern modellieren wir präzise und natürlich – für mehr Definition und maskulinen Charakter.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Jawline & Kinnaufbau</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>"Brotox" / "Maletox" – Männer-Botox</h3>
-                                    <div class="price-range">ab 280€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Stirnfalten</span><span>320€</span></li>
-                                        <li><span>Zornesfalte</span><span>280€</span></li>
-                                        <li><span>Krähenfüße</span><span>280€</span></li>
-                                        <li><span>Kiefermuskulatur</span><span>380€</span></li>
-                                        <li><span>Komplettbehandlung</span><span>680€</span></li>
-                                    </ul>
-                                    <p class="service-description">"Brotox" ist Botox speziell für Männer – reduziert Mimikfalten, ohne Ausdruck zu verlieren. Perfekt dosiert für kräftigere Muskulatur.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Brotox</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Hyaluronsäure</h3>
-                                    <div class="price-range">ab 420€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Nasolabialfalten</span><span>450€</span></li>
-                                        <li><span>Wangen-Volumen</span><span>520€</span></li>
-                                        <li><span>Lippen-Kontur</span><span>420€</span></li>
-                                        <li><span>Tränenrinne</span><span>480€</span></li>
-                                    </ul>
-                                    <p class="service-description">Volumenaufbau und Faltenkorrektur mit hochwertiger Hyaluronsäure.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Hyaluronsäure</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Facelift</h3>
-                                    <div class="price-range">ab 6.500€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Mini-Facelift</span><span>6.500€</span></li>
-                                        <li><span>Komplettes Facelift</span><span>12.500€</span></li>
-                                        <li><span>Halsstraffung zusätzlich</span><span>+2.800€</span></li>
-                                    </ul>
-                                    <p class="service-description">Chirurgische Gesichtsstraffung für langanhaltende Verjüngung.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Facelift</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Augenlidstraffung</h3>
-                                    <div class="price-range">ab 2.800€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Oberlider</span><span>2.800€</span></li>
-                                        <li><span>Unterlider</span><span>3.200€</span></li>
-                                        <li><span>Komplett (beide)</span><span>5.200€</span></li>
-                                    </ul>
-                                    <p class="service-description">Korrektur erschlaffter Augenlider für einen wachen Blick.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Augenlidstraffung</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Nasenkorrektur</h3>
-                                    <div class="price-range">ab 4.500€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Nasenhöcker-Korrektur</span><span>4.800€</span></li>
-                                        <li><span>Nasenspitze</span><span>4.500€</span></li>
-                                        <li><span>Komplette Rhinoplastik</span><span>6.800€</span></li>
-                                    </ul>
-                                    <p class="service-description">Präzise Nasenformung für harmonische Gesichtsproportionen.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Nasenkorrektur</div>
-                            </div>
-                        </div>
-
+                        <a href="behandlungen/brotox.html" class="service-card-enhanced">
+                            <div class="service-icon">💪</div>
+                            <h3>"Brotox" / "Maletox"</h3>
+                            <p>Entspannt. Souverän. Natürlich männlich. Botox speziell für Männer – reduziert Falten ohne Ausdruck zu verlieren.</p>
+                        </a>
+                        <a href="behandlungen/jawline-aufbau.html" class="service-card-enhanced">
+                            <div class="service-icon">🗿</div>
+                            <h3>Jawline & Kinnaufbau</h3>
+                            <p>Markante Linien. Starke Wirkung. Präzise Modellierung für mehr Definition und Charakter.</p>
+                        </a>
+                        <a href="behandlungen/hyaluron.html" class="service-card-enhanced">
+                            <div class="service-icon">💎</div>
+                            <h3>Hyaluron-Filler</h3>
+                            <p>Präzise, männlich, harmonisch. Natürliche Volumengebung für maskuline Gesichtszüge.</p>
+                        </a>
+                        <a href="behandlungen/botox.html" class="service-card-enhanced">
+                            <div class="service-icon">🎯</div>
+                            <h3>Botox Behandlungen</h3>
+                            <p>Professionelle Faltenbehandlung mit präziser Dosierung für natürliche Ergebnisse.</p>
+                        </a>
                     </div>
                 </div>
 
-<!-- Männermedizin -->
-                <div class="service-category">
-                    <h2>Männermedizin & Gesundheit</h2>
+                <!-- Performance & Gesundheit -->
+                <div class="services-category">
+                    <h2>Performance & Gesundheit</h2>
                     <div class="services-grid">
-                        
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Hormon-Analyse</h3>
-                                    <div class="price-range">ab 180€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Basis-Hormoncheck</span><span>180€</span></li>
-                                        <li><span>Erweiterte Analyse</span><span>320€</span></li>
-                                        <li><span>Komplett-Profil</span><span>480€</span></li>
-                                        <li><span>Nachkontrolle</span><span>120€</span></li>
-                                    </ul>
-                                    <p class="service-description">Umfassende Hormondiagnostik für optimale Männergesundheit.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Hormon-Analyse</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Testosteron-Therapie</h3>
-                                    <div class="price-range">ab 280€/Monat</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Erstberatung + Diagnostik</span><span>320€</span></li>
-                                        <li><span>Monatliche Therapie</span><span>280€</span></li>
-                                        <li><span>3-Monats-Paket</span><span>750€</span></li>
-                                        <li><span>Kontrollen</span><span>180€</span></li>
-                                    </ul>
-                                    <p class="service-description">Professionelle Hormonersatztherapie unter ärztlicher Kontrolle.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Testosteron-Therapie</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Haarausfall-Behandlung</h3>
-                                    <div class="price-range">ab 320€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>PRP-Behandlung</span><span>420€</span></li>
-                                        <li><span>Mesotherapie</span><span>320€</span></li>
-                                        <li><span>3er-Kur</span><span>980€</span></li>
-                                        <li><span>Haartransplantation</span><span>ab 2.800€</span></li>
-                                    </ul>
-                                    <p class="service-description">Moderne Therapien gegen Haarausfall und für kräftigeres Haar.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Haarausfall-Behandlung</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Botox gegen Schwitzen</h3>
-                                    <div class="price-range">ab 520€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Achseln</span><span>520€</span></li>
-                                        <li><span>Handinnenflächen</span><span>620€</span></li>
-                                        <li><span>Fußsohlen</span><span>620€</span></li>
-                                        <li><span>Kombinationsbehandlung</span><span>1.580€</span></li>
-                                    </ul>
-                                    <p class="service-description">Kein unangenehmes Schwitzen mehr. Seriöser Auftritt trotz Anzug und heißen Temperaturen – sehr beliebt bei der männlichen Kundschaft.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Hyperhidrose-Behandlung</div>
-                            </div>
-                        </div>
-
+                        <a href="behandlungen/sportmedizin.html" class="service-card-enhanced">
+                            <div class="service-icon">🏃</div>
+                            <h3>Sportmedizin & Leistungsdiagnostik</h3>
+                            <p>Performance durch Präzision. Analyse von Blutbild und Hormonprofil für optimierte Vitalität.</p>
+                        </a>
+                        <a href="behandlungen/infusionstherapie.html" class="service-card-enhanced">
+                            <div class="service-icon">💧</div>
+                            <h3>Infusionstherapie</h3>
+                            <p>Vitalität im Fluss. Nährstoffe direkt in die Zelle – maximal bioverfügbar für sofortige Energie.</p>
+                        </a>
+                        <a href="behandlungen/fett-weg-spritze.html" class="service-card-enhanced">
+                            <div class="service-icon">🎯</div>
+                            <h3>Fett-weg-Spritze</h3>
+                            <p>Gezielt statt global. Lokale Injektionslipolyse löst hartnäckige Fettdepots punktgenau auf.</p>
+                        </a>
+                        <a href="behandlungen/botox-schwitzen.html" class="service-card-enhanced">
+                            <div class="service-icon">🛡️</div>
+                            <h3>Botox gegen Schwitzen</h3>
+                            <p>Souverän. Trocken. Selbstbewusst. Schluss mit Schweißflecken und unsicheren Händedrücken.</p>
+                        </a>
+                        <a href="behandlungen/hyperhidrose.html" class="service-card-enhanced">
+                            <div class="service-icon">🌟</div>
+                            <h3>Hyperhidrose Behandlung</h3>
+                            <p>Effektive Behandlung gegen übermäßiges Schwitzen für mehr Selbstsicherheit im Alltag.</p>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Sportmedizin & Performance -->
-                <div class="service-category">
-                    <h2>Sportmedizin & Performance</h2>
+                <!-- Chirurgische Eingriffe -->
+                <div class="services-category">
+                    <h2>Chirurgische Eingriffe</h2>
                     <div class="services-grid">
-                        
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Leistungsdiagnostik & Hormonprofil</h3>
-                                    <div class="price-range">ab 280€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Erweiterte Blutdiagnostik</span><span>380€</span></li>
-                                        <li><span>Hormonprofil komplett</span><span>480€</span></li>
-                                        <li><span>TRT-Beratung</span><span>280€</span></li>
-                                        <li><span>Peptidberatung</span><span>320€</span></li>
-                                    </ul>
-                                    <p class="service-description">Performance durch Präzision. Über 50 Marker inkl. Testosteron, DHEA, Estradiol, Cortisol. Monitoring bei Supplementierung & Hormonanwendung.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Leistungsdiagnostik</div>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Infusionstherapie – Longevity & Energie</h3>
-                                    <div class="price-range">ab 120€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Vitamin Boost</span><span>120€</span></li>
-                                        <li><span>NAD⁺ Longevity</span><span>380€</span></li>
-                                        <li><span>Detox & Recovery</span><span>180€</span></li>
-                                        <li><span>Glow & Collagen</span><span>220€</span></li>
-                                        <li><span>Vegan Support</span><span>160€</span></li>
-                                    </ul>
-                                    <p class="service-description">Vitalität im Fluss. Nährstoffe direkt in die Zelle, maximal bioverfügbar für sofortige Energie & langfristige Zellstärkung.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Infusionstherapie</div>
-                            </div>
-                        </div>
-
+                        <a href="behandlungen/facelift.html" class="service-card-enhanced">
+                            <div class="service-icon">✂️</div>
+                            <h3>Facelift</h3>
+                            <p>Chirurgische Gesichtsstraffung für langanhaltende Verjüngung und natürliche Ergebnisse.</p>
+                        </a>
+                        <a href="behandlungen/augenlidstraffung.html" class="service-card-enhanced">
+                            <div class="service-icon">👀</div>
+                            <h3>Augenlidstraffung</h3>
+                            <p>Korrektur erschlaffter Augenlider für einen wachen, frischen Blick.</p>
+                        </a>
+                        <a href="behandlungen/nasenkorrektur.html" class="service-card-enhanced">
+                            <div class="service-icon">👃</div>
+                            <h3>Nasenkorrektur</h3>
+                            <p>Präzise Nasenformung für harmonische Gesichtsproportionen.</p>
+                        </a>
+                        <a href="behandlungen/bauchstraffung.html" class="service-card-enhanced">
+                            <div class="service-icon">🏋️</div>
+                            <h3>Bauchstraffung</h3>
+                            <p>Straffung der Bauchdecke für eine definierte Körpersilhouette.</p>
+                        </a>
+                        <a href="behandlungen/gynakomastie.html" class="service-card-enhanced">
+                            <div class="service-icon">💪</div>
+                            <h3>Gynäkomastie</h3>
+                            <p>Korrektur der männlichen Brustvergrößerung für eine maskuline Brustform.</p>
+                        </a>
+                        <a href="behandlungen/fettabsaugung.html" class="service-card-enhanced">
+                            <div class="service-icon">🎯</div>
+                            <h3>Fettabsaugung</h3>
+                            <p>Präzise Körperkonturierung durch schonende Fettabsaugung.</p>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Körperkonturierung -->
-                <div class="service-category">
-                    <h2>Körperkonturierung & Formung</h2>
+                <!-- Männerspezifische Behandlungen -->
+                <div class="services-category">
+                    <h2>Männerspezifische Behandlungen</h2>
                     <div class="services-grid">
-                        
-                        <div class="service-item">
-                            <div class="service-content">
-                                <div class="service-header">
-                                    <h3>Fett-weg-Spritze – Lokale Konturkorrektur</h3>
-                                    <div class="price-range">ab 380€</div>
-                                </div>
-                                <div class="service-details">
-                                    <ul class="treatment-list">
-                                        <li><span>Doppelkinn</span><span>480€</span></li>
-                                        <li><span>Bauch (klein)</span><span>380€</span></li>
-                                        <li><span>Untere Rückenpartie</span><span>420€</span></li>
-                                        <li><span>2-4 Sitzungen Paket</span><span>1.480€</span></li>
-                                    </ul>
-                                    <p class="service-description">Gezielt statt global. Desoxycholsäure & Phosphatidylcholin lösen hartnäckige Fettdepots auf – punktgenau und dauerhaft.</p>
-                                </div>
-                            </div>
-                            <div class="service-image">
-                                <div class="service-image-placeholder">Bild: Fett-weg-Spritze</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Zusatzinformationen -->
-                <div class="service-info">
-                    <div class="info-grid">
-                        <div class="info-card">
-                            <h3>Erstberatung</h3>
-                            <p>Ausführliche Beratung und Aufklärung über alle Behandlungsmöglichkeiten.</p>
-                            <div class="info-price">80€</div>
-                            <small>(wird bei Behandlung angerechnet)</small>
-                        </div>
-                        
-                        <div class="info-card">
-                            <h3>Nachsorge</h3>
-                            <p>Professionelle Nachbetreuung und Kontrollen nach allen Eingriffen inklusive.</p>
-                            <div class="info-price">inklusive</div>
-                        </div>
-                        
-                        <div class="info-card">
-                            <h3>Finanzierung</h3>
-                            <p>Ratenzahlung und Finanzierungsmöglichkeiten für größere Eingriffe verfügbar.</p>
-                            <div class="info-price">ab 0% Zinsen</div>
-                        </div>
+                        <a href="behandlungen/hormon-analyse.html" class="service-card-enhanced">
+                            <div class="service-icon">📊</div>
+                            <h3>Hormon-Analyse</h3>
+                            <p>Umfassende Hormondiagnostik für optimale Männergesundheit.</p>
+                        </a>
+                        <a href="behandlungen/testosteron.html" class="service-card-enhanced">
+                            <div class="service-icon">🔥</div>
+                            <h3>Testosteron-Therapie</h3>
+                            <p>Professionelle Hormonersatztherapie unter ärztlicher Kontrolle.</p>
+                        </a>
+                        <a href="behandlungen/haarausfall.html" class="service-card-enhanced">
+                            <div class="service-icon">🌱</div>
+                            <h3>Haarausfall-Behandlung</h3>
+                            <p>Moderne Therapien gegen Haarausfall und für kräftigeres Haar.</p>
+                        </a>
+                        <a href="behandlungen/lipolyse.html" class="service-card-enhanced">
+                            <div class="service-icon">🎯</div>
+                            <h3>Lipolyse</h3>
+                            <p>Nicht-invasive Fettreduktion für gezielte Körperformung.</p>
+                        </a>
                     </div>
                 </div>
 
@@ -517,14 +394,20 @@
         </section>
 
         <!-- CTA Section -->
-        <section class="cta-section">
+        <section class="cta-section" style="background: linear-gradient(135deg, var(--menst-steel-blue) 0%, var(--menst-accent) 100%); padding: var(--menst-s-12) 0; margin-top: var(--menst-s-12);">
             <div class="container">
-                <div class="cta-content">
-                    <h2>Bereit für Ihre Transformation?</h2>
-                    <p>Vereinbaren Sie noch heute Ihren unverbindlichen Beratungstermin.</p>
+                <div class="cta-content" style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <h2 style="color: white; font-size: 2.5rem; font-weight: 700; margin-bottom: var(--menst-s-4); text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        Bereit für Ihre Transformation?
+                    </h2>
+                    <p style="color: rgba(255,255,255,0.95); font-size: 1.2rem; line-height: 1.6; margin-bottom: var(--menst-s-8);">
+                        Vereinbaren Sie noch heute Ihren unverbindlichen Beratungstermin.<br>
+                        Diskret, professionell und auf Ihre Bedürfnisse abgestimmt.
+                    </p>
                     <div class="cta-buttons">
-                        <button class="btn--menst-primary">Beratungstermin buchen</button>
-                        <button class="btn--menst-quiet">Kostenlose Hotline: 0800 123 456</button>
+                        <button class="btn--menst-primary" style="background: white; color: var(--menst-steel-blue); font-weight: 600; font-size: 1.1rem; padding: var(--menst-s-4) var(--menst-s-8); box-shadow: 0 8px 32px rgba(0,0,0,0.2); transition: all 0.3s ease; border: none;">
+                            Beratungstermin buchen
+                        </button>
                     </div>
                 </div>
             </div>
@@ -555,6 +438,7 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
     <script src="js/menst-view-transitions.js"></script>
     <script src="js/menst-animations.js"></script>
 </body>

@@ -238,7 +238,7 @@ body {
 
 .treatment-hero-fettweg {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/fett-weg-bg.jpg') !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/fett-weg-spritze-bg.png') !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -2701,7 +2701,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../images/fett-weg-bg.jpg') no-repeat center / cover;
+  background: url('../images/fett-weg-spritze-bg.png') no-repeat center / cover;
   opacity: 0.5;
   z-index: 0;
 }
@@ -4589,3 +4589,51 @@ section[id="sec.menst-shop"] {
     height: 14px;
   }
 }
+
+/* Legal Pages Styling */
+.legal-header {
+  background: linear-gradient(135deg, var(--menst-ink) 0%, var(--menst-steel) 100%);
+  color: white;
+  padding: var(--menst-s-16) 0 var(--menst-s-12);
+  text-align: center;
+}
+
+.legal-header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.legal-content {
+  padding: var(--menst-s-12) 0;
+  background: white;
+}
+
+.legal-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-text h2 {
+  color: var(--menst-ink);
+  margin-top: var(--menst-s-8);
+  margin-bottom: var(--menst-s-4);
+  font-size: 1.8rem;
+}
+
+.legal-text h3 {
+  color: var(--menst-steel);
+  margin-top: var(--menst-s-6);
+  margin-bottom: var(--menst-s-3);
+  font-size: 1.3rem;
+}
+
+.legal-text p {
+  color: var(--menst-shade-60);
+  line-height: 1.8;
+  margin-bottom: var(--menst-s-4);
+}
+
+.legal-text strong {
+  color: var(--menst-ink);
+}
+
